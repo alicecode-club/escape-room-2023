@@ -1,0 +1,18 @@
+body {
+    background: url(../media/candy_house.jpg) no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+#oven {
+    margin-left: 27%;
+    margin-top: 23%;
+    height: 35%;
+}
+
+#hansel_in_cage {
+    margin-left: 15%;
+    margin-top: 15%;
+    height: 60%;
+}
+
+  
