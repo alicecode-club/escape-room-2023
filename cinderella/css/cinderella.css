@@ -1,0 +1,17 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-image: url("../images/BackgroundImageCinderella.png");
+    background-size: cover;
+}
+
+#riddleDiv{
+    /*background-color: red;*/
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+}
+
+#textDiv{
+    /*background-color: blue;*/
+    color: #FEEDBF;
+}
