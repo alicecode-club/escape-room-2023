@@ -31,5 +31,8 @@ body{
     right: 55%;
     height: 100px;
     width: 50px;
-    bottom: 20%;
+    bottom: 20%;}
+
+#door{
+    display: none;
 }
