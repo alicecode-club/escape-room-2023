@@ -24,3 +24,12 @@ body{
     width: 100px;
     bottom: 30%;
 }
+
+#coachmenDivLegs{
+    background-color: red;
+    position: fixed;
+    right: 55%;
+    height: 100px;
+    width: 50px;
+    bottom: 20%;
+}
