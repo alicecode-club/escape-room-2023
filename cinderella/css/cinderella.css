@@ -1,0 +1,77 @@
+body{
+    font-family: 'Marck Script', cursive;
+    background-image: url("../images/BackgroundImageCinderella.png");
+    background-size: cover;
+}
+#title{
+    text-align: center;
+    position: fixed;
+    right: 55%;
+    height: 100px;
+    width: 50px;
+    bottom: 20%;}
+
+#riddleDiv{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+}
+
+#textDiv{
+    /*background-color: blue;*/
+    color: #FEEDBF;
+}
+
+#coachmanDiv{
+    /*background-color: red;*/
+    position: fixed;
+    right: 47%;
+    height: 200px;
+    width: 100px;
+    bottom: 30%;
+}
+
+#coachmenDivLegs{
+    /*background-color: red;*/
+    position: fixed;
+    right: 55%;
+    height: 100px;
+    width: 50px;
+    bottom: 20%;
+}
+
+
+#door{
+    /*font-family: 'Bebas Neue';
+    font-size: 50px;*/
+    display: none;
+    
+    /*width:150px;
+    height:150px;
+    background-color: #9e847b;
+    border:10px ridge #382929;
+    color:black;
+    border-bottom:dotted;
+    padding:absolute;
+    left:20;
+    bottom:0;*/
+
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#doorAlign{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
