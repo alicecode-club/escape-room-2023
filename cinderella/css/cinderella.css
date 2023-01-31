@@ -10,8 +10,8 @@ body{
     height: 100px;
     width: 50px;
     bottom: 20%;}
+
 #riddleDiv{
-    /*background-color: red;*/
     display: flex;
     justify-content: flex-start;
     padding: 2%;
@@ -23,7 +23,7 @@ body{
 }
 
 #coachmanDiv{
-    background-color: red;
+    /*background-color: red;*/
     position: fixed;
     right: 47%;
     height: 200px;
@@ -32,19 +32,21 @@ body{
 }
 
 #coachmenDivLegs{
-    background-color: red;
+    /*background-color: red;*/
     position: fixed;
     right: 55%;
     height: 100px;
     width: 50px;
-    bottom: 20%;}
+    bottom: 20%;
+}
 
 
 #door{
-    font-family: 'Bebas Neue';
-    font-size: 50px;
+    /*font-family: 'Bebas Neue';
+    font-size: 50px;*/
     display: none;
-    width:150px;
+    
+    /*width:150px;
     height:150px;
     background-color: #9e847b;
     border:10px ridge #382929;
@@ -52,6 +54,27 @@ body{
     border-bottom:dotted;
     padding:absolute;
     left:20;
-    bottom:0;
+    bottom:0;*/
+
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#doorAlign{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#spaceBetween{
 
 }
