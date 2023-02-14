@@ -116,3 +116,11 @@ function showAllLetter() {
     document.getElementById("sfgaeLetterPage").className = "hide";
     document.getElementById("letterTextLetter").className = "show";
 }
+
+function activDoor() {
+    window.location.replace("forest1.html");
+}
+
+function direction1() {
+    window.location.replace("forest2.html");
+}
