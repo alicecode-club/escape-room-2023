@@ -4,8 +4,8 @@
 }
 
 .chess {
-    height: 30px;
-    width: 50x;
+    height: 2%;
+    width: 3%;
     margin-top: 0.2%;
     margin-left: 51.5%;
     cursor: pointer;
@@ -201,8 +201,8 @@
 }
 
 .codeEnterecpage {
-    width: 1200px;
-    height: 700px;
+    width: 80%;
+    height: 60%;
     background-color: rgb(147, 203, 209);
     opacity: 0.8;
 }
