@@ -105,28 +105,6 @@ function activePen() {
     alert("You have found the Pen!");
 }
 
-function activDoor() {
-    window.location.replace("door.html");
-
-    alert("You found the evil door!");
-    setTimeout(function() {
-        activDoor2();
-    },10)
-    
-}
-
-function activDoor2() {
-    alert("Haha I caught you");
-    alert("I'll let you go and tell you the third number only if you will answer this question correctly:")
-    answer = prompt("What is the answer?");
-
-    if (answer == "answer"){
-        alert("Ugh you are right:( the number is 8")
-    }
-    else{
-        alert("You stuck here forever haha")
-    }
-}
 
 function showButtonLetterRight() {
     document.getElementById("coverQuestionNumLetter").className = "hide";
