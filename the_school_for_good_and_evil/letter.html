@@ -1,50 +1,101 @@
 <html>
+    <head>
 
-<head>
+        <script src="tsfgae.js"></script>
 
-    <script src="tsfgae.js"></script>
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Itim&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Solitreo&display=swap" rel="stylesheet">
 
 
-<body class="penContanior">
+    </head>
+
+
+
+    <body class="sfgaeLetterPage">
+
 <link rel="stylesheet" href="tsfgae.css">
-<link rel="stylesheet" href="code.css">
 
-<div class="centered codeEnterecpage">
-    <div class="codeEnterecpageInside">
+
+        <div  id="letterLetter"  class="letterLetter">
+            <div class="letterText">
+                <h3 class="mainLineLetter">To the king of Camelot,</h3>
+                <p class="letterFirstP">Before I can show you my message I need to make sure you are not an impostor. If you are the king, or a close friend, you should know how to answer this question: </p>
+                <p class="letterFirstP2">post Scriptum - I hope you feel gr8t</p>
+            </div>
+            <input class="letterButton" type="button" value="next page" id="letterNextPageB" onclick="letterNextPage()">
+        </div>
+
+
+
+        <div class="hide" id="sfgaeLetterPage">
+
+            <div>
+
+                <div id="sfgaeLetterPageShow">
+        
+                <div class ="letterSqure">Wich one are Sofi and Agatha?</div>
+        
+            
+                <div id="coverImage" class="coverImgContanior">
+                    <img id="letter1" class="coverImgLetter" onclick="coverImgCheck('letter',1)" src="https://i.pinimg.com/736x/6f/77/9a/6f779abbc2cb22ffc02b944f7aac1ac4.jpg">
+                    <img id="letter2" class="coverImgLetter" onclick="coverImgCheck('letter',2)" src="https://i.pinimg.com/564x/e2/07/c8/e207c8034fd9687eee3af9965131d245.jpg">
+                    <img id="letter3" class="coverImgLetter" onclick="coverImgCheck('letter',3)" src="https://i.pinimg.com/474x/8d/7d/12/8d7d121bc837a17118e5603b2beed61f.jpg">
+                    <img id="letter4" class="coverImgLetter" onclick="coverImgCheck('letter',4)" src="https://i.pinimg.com/564x/da/50/5d/da505df4f3304b354cb0b1510898cdc8.jpg">
+                    <img id="letter5" class="coverImgLetter" onclick="coverImgCheck('letter',5)" src="https://i.pinimg.com/564x/8f/f9/41/8ff941be38a66940187ad014a87a8499.jpg">
+                </div>
+                
+                <div id="coverQuestionNumLetter">
+                <div class="coverQuestionWorld" id="letterQuetionNum"></div>
+               </div>
+
+               <div class="hide" id="letterTryAgainB">
+                <input class="moveOnLetterButton letterWorngButton" type="button" value="Try Again">
+           </div>
+
+               <div class="hide" id="letterQuetionButton">
+                    <input class="moveOnLetterButton letterButton" type="button" value="Continue" onclick="showAllLetter()">
+               </div>
+            
+        
+            </div>
+        
+          </div>    
+            
+        </div>
+
+
+
+        <div class="hide" id="letterTextLetter">
+           
+
+            <div  id="letterLetter"  class="letterLetter">
+                <div class="letterText">
+                    <h3 class="mainLineLetter">Dear king, read it well</h3>
+                    <p class="letterFirstP">You found the box with all your might,
+                        The letter came in second sight.
+                        Next, the mask was found with glee,
+                        And that's the order you'll agree. </p>
+                </div>
+
+        </div>
+
+
         <div>
             <a href="tsfgae.html">
-                <img id="backToMain" class="backToMain" alt="back" src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/back-arrow-blue-circle_z1k9I88u_SB_PM.jpg">
+            <img id="backToMain" class="backToMain" alt="back" src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/back-arrow-blue-circle_z1k9I88u_SB_PM.jpg">
             </a>
         </div>
-        <p class="penInstraction2">Once you have found the three digits, you can open the box that contains the legend of Sophie and Agatha!</p>
-        <div>
-            <p>
-                <span class="input">
-                  <input type="text" placeholder="numbers">
-                  <span></span> 
-                </span>
-              </p>
+
         </div>
-        <div>
-            <a href="end.html">
-                <img id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
-            </a>
-            <div id="penInncorrectLine"></div>
-        </div>
-        
-   </div>
-</div>
 
-
-</body>
-
-
-
+    </body>
 </html>
