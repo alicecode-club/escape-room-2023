@@ -24,10 +24,10 @@ $(document).ready(function(){
 
     //create the random color code
     var code = [
-        possibleColors[Math.floor(Math.random()*6)], 
-        possibleColors[Math.floor(Math.random()*6)],
-        possibleColors[Math.floor(Math.random()*6)],
-        possibleColors[Math.floor(Math.random()*6)]
+        possibleColors[0], 
+        possibleColors[0],
+        possibleColors[2],
+        possibleColors[1]
     ];
     
     console.log(code);
