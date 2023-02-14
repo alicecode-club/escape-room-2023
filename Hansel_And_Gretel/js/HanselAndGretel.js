@@ -1,11 +1,13 @@
 let colorPuzzle=false;
 let degreesPuzzle=false;
+
 function exit() {
-    if (colorPuzzle==true) {
-        //exit
-    }
-    if (colorPuzzle==false & degreesPuzzle==true) {
-        //color puzzle
+    if (code_solved==false) {
+        alert("you have to solve the puzzle first")
+        window.location.replace("../html/colorPuzzle.html");
         
+    }
+    if (code_solved==true){
+        alert("you escaped!");
     }
 }
