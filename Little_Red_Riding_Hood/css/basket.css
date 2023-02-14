@@ -6,18 +6,25 @@ body{
     width: 50vh;
 }
 
+#items_div {
+    width: 1010px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
 #wolf {
     background-color: white;
     width: 110px;
     height: 110px;
-    margin-left: 900px;
-    margin-top: 60px;
+    /*margin-left: 900px;
+    margin-top: 60px;*/
 }
 
 #grandmother {
     background-color: white;
     width: 110px;
     height: 110px;
-    margin-left: 100px;
-    margin-bottom: 300px;
+    /*margin-left: 100px;
+    margin-bottom: 300px;*/
 }
