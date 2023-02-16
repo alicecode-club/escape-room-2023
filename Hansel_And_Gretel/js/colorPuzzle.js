@@ -1,3 +1,9 @@
+code_solved=false;
+
+function goBack() {
+    window.location.replace("../html/HanselAndGretel.html");
+} 
+
 $(document).ready(function(){
     var currentColor = "white";
     var currentBoardCells = ["board40", "board41", "board42", "board43"];
@@ -6,7 +12,6 @@ $(document).ready(function(){
     var possibleColors = ["blue", "green", "red", "yellow", "orange", "pink"];
     var hasWon = false;
     var cell1Color, cell2Color, cell3Color, cell4Color;
-
     //dictionary of colors
     var colors = {
         "rgb(0, 128, 0)": "green",
@@ -19,10 +24,10 @@ $(document).ready(function(){
 
     //create the random color code
     var code = [
-        possibleColors[Math.floor(Math.random()*6)], 
-        possibleColors[Math.floor(Math.random()*6)],
-        possibleColors[Math.floor(Math.random()*6)],
-        possibleColors[Math.floor(Math.random()*6)]
+        possibleColors[0], 
+        possibleColors[0],
+        possibleColors[2],
+        possibleColors[1]
     ];
     
     console.log(code);
@@ -109,12 +114,15 @@ $(document).ready(function(){
             code[2] === cell3Color &&
             code[3] === cell4Color){
             hasWon = true;
+            code_solved=true;
+            console.log(code_solved);
             alert("Congratulations, you have won!\nThe code will now be displayed.");
             //set the colors of the code box
             $("#secretColor1").css("background-color", code[0]);
             $("#secretColor2").css("background-color", code[1]);
             $("#secretColor3").css("background-color", code[2]);
             $("#secretColor4").css("background-color", code[3]);
+            window.location.replace("../html/HanselAndGretel.html");
         }
         else {
             alert("wrong!")

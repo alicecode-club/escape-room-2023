@@ -1,0 +1,44 @@
+body{
+    background-image: url("../images/basket.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50vh;
+}
+
+#items_div {
+    width: 920px;
+    height: 250px;
+    margin-left: 100px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#wolf {
+    background-color: white;
+    width: 130px;
+    height: 110px;
+}
+
+#grandmother {
+    background-color: white;
+    width: 110px;
+    height: 180px;
+}
+
+
+#cape {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    margin-left: 1370px;
+    margin-top: 80px;
+}
+
+#book {
+    background-color: white;
+    width: 150px;
+    height: 130px;
+    margin-left: 770px;
+}

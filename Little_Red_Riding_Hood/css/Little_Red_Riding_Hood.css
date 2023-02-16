@@ -8,7 +8,7 @@
  
 }
 
-#library{
+#libraryTheImageBackground{
     width: 100%;
     height: 100%;
     background-repeat: none;
@@ -17,7 +17,7 @@
     background-position: center;
 }
 
-#libraryDiv{
+#libraryDivBackgroundImage{
     width: 100%;
     height: 100%;
     filter: blur(8px);
@@ -26,17 +26,18 @@
 }
 
 #PickTheBasket{
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 80px;
+    height: 30px;
     position: relative;
-    margin-top: 20%;
+    margin-top: 540px;
     z-index: 2;
-    margin-left: 100px;
+    margin-right: 420px;
 }
 
-#library2{
+#TheActuallyLibrary{
     z-index: 1;
     position: absolute;
+    height: 100%;
 }
 
