@@ -14,22 +14,58 @@
         width: 100%;
     }
     body{        
-        position: fixed;
-        background-image: url('bg.JPG');
+        background-image: url("../images/bg.JPG");
         background-repeat: no-repeat;
-        background-size: 100% 750px;
-
-
+        background-size: 100% 690px;
     }
     .box2{
         position: relative;
-        top: 30px;
-        height: 50px;
-        width: 50px;
-        color: red;
+        bottom: 350px;
+        left: 20px;
+        height: 340px;
+        width: 350px;
+        background-color: transparent;
 
     }
+    .box2:hover{
+        cursor: pointer;
+    }
+    .ggrandma{
+        position: absolute;
+        top: 100px;
+        left: 93%;
+        height:100px;
+        width:80px;
+    }
+    .wwolf{
+        position: absolute;
+        top:220px;
+        left: 93%;
+        height:50px;
+        width:80px;
+    }
+    .ccape{
+        position: absolute;
+        top:300px;
+        left: 94%;
+        height:80px;
+        width:55px;
+    }
 </style>
-<div class="box"></div>
-<div class="box2"></div>
+<body>
+    <div class="box"></div>
+    <div class="box2" onclick="click()"></div>
+    <div class="grandma">
+        <img class="ggrandma" src="../images/grandma.png" alt="">
+    </div>
+    <div class="wolf">
+        <img class="wwolf" src="../images/wolf.png" alt="">
+    </div>
+    <div class="cape">
+        <img class="ccape" src="../images/cape.png" alt="">
+    </div>
+</body>
+<script>
+
+</script>
 </html>
