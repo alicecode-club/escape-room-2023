@@ -114,6 +114,7 @@ function showAllLetter() {
     document.getElementById("letterTextLetter").className = "show";
 }
 
+<<<<<<< HEAD
 
 function enableLetter(){
     document.getElementById("coverImage").className = "enAbleDiv";
@@ -122,3 +123,12 @@ function enableLetter(){
 function disableLetter(){
     document.getElementById("coverImage").className = "disableDiv";
 }
+=======
+function activDoor() {
+    window.location.replace("forest1.html");
+}
+
+function direction1() {
+    window.location.replace("forest2.html");
+}
+>>>>>>> 09cef3a8fe1e1f711c8f305414b88692003ce8bd
