@@ -4,8 +4,8 @@
 }
 
 .chess {
-    height: 2%;
-    width: 3%;
+    height: 0.5%;
+    width: 1.5%;
     margin-top: 0.2%;
     margin-left: 51.5%;
     cursor: pointer;
@@ -414,4 +414,12 @@
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+.disableDiv {
+  pointer-events:none;
+}
+
+.enAbleDiv {
+  pointer-events: block;
 }
