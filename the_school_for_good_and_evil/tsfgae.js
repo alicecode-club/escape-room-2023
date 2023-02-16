@@ -41,19 +41,16 @@ function checkCoverNum(coverNum) {
 function checkLetterNum(coverNum) {
     switch(coverNum) {
         case 2:
-            showLetterNum("Worng");
-            break;
+        case 4:
         case 1:
+        case 5:
             showLetterNum("Worng");
+            disableLetter();
             break;
         case 3:
             showButtonLetterRight();
+            disableLetter();
             break;
-        case 4:
-            showLetterNum("Worng");
-            break;
-        case 5:
-            showLetterNum("Worng");
     }
 }
 
@@ -117,6 +114,14 @@ function showAllLetter() {
     document.getElementById("letterTextLetter").className = "show";
 }
 
+
+function enableLetter(){
+    document.getElementById("coverImage").className = "enAbleDiv";
+}
+
+function disableLetter(){
+    document.getElementById("coverImage").className = "disableDiv";
+}
 function activDoor() {
     window.location.replace("forest1.html");
 }

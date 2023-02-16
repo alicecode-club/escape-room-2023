@@ -1,4 +1,27 @@
 body{
-    background-image: url("Openning_Screeen_Images/Book_Bg_Img.jpg");
+    background-image: url("Openning_Screeen_Images/BgBook.jpeg");
     background-size: cover;
+}
+
+#book{
+    border: 3px solid red;
+    height: 550px;
+    width: 770px;
+    position: fixed;
+    right: 26%;
+    bottom: 9%;
+    display: flex;
+    flex-direction: row;
+}
+
+#rightSide{
+    background-color: green;
+    width: 50%;
+    height: 100%;
+}
+
+#leftSide{
+    background-color: navy;
+    width: 50%;
+    height: 100%;
 }
