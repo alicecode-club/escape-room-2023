@@ -8,7 +8,7 @@ body{
 
 #items_div {
     width: 920px;
-    height: 250px;
+    height: 160px;
     margin-left: 100px;
     margin-top: 60px;
     display: flex;
@@ -27,13 +27,20 @@ body{
     height: 180px;
 }
 
+#explane_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.724);
+}
+
 
 #cape {
     background-color: white;
     width: 120px;
     height: 120px;
     margin-left: 1370px;
-    margin-top: 80px;
 }
 
 #book {
