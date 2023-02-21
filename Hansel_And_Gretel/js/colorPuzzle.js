@@ -1,4 +1,4 @@
-code_solved=false;
+var code_solved=false;
 
 function goBack() {
     window.location.replace("../html/HanselAndGretel.html");
@@ -122,6 +122,7 @@ $(document).ready(function(){
             $("#secretColor2").css("background-color", code[1]);
             $("#secretColor3").css("background-color", code[2]);
             $("#secretColor4").css("background-color", code[3]);
+            localStorage.setItem("code_solved",true);
             window.location.replace("../html/HanselAndGretel.html");
         }
         else {
