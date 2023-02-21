@@ -33,12 +33,12 @@ $(document).ready(function(){
     console.log(code);
 
     //create the cells and add them to the board
-    for(let i = 0; i < 44; i++){
+    for(let i = 0; i < 4; i++){
         let cell = "<div class=\"boardCell\" id=board"+i+"></div>"
         $(".board").append(cell);
     }
         //create cells for the pegs
-        for(let i = 0; i < 44; i++){
+        for(let i = 0; i < 4; i++){
             let cell = "<div class=\"pegCell\" id=peg"+i+"></div>"
             $(".pegs").append(cell);
         }
@@ -122,7 +122,7 @@ $(document).ready(function(){
             $("#secretColor2").css("background-color", code[1]);
             $("#secretColor3").css("background-color", code[2]);
             $("#secretColor4").css("background-color", code[3]);
-            localStorage.getItem("code_solved",true);
+            localStorage.setItem("code_solved",true);
             window.location.replace("../html/HanselAndGretel.html");
         }
         else {

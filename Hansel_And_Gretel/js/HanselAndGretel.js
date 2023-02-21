@@ -2,7 +2,8 @@ let degreesPuzzle=false;
 let cagePuzzle=false;
 
 function exit() {
-    var code_solved= localStorage.getItem("code_solved");
+    code_solved= localStorage.getItem("code_solved");
+    console.log(code_solved);
     if (code_solved==null) {
         alert("you have to solve the puzzle first")
         window.location.replace("../html/colorPuzzle.html");
@@ -50,6 +51,9 @@ function submit() {
         alert ("the cage is unlocked!");
         popDown();
         cagePuzzle=true;
+        setTimeout(function(){
+			alert ("Hansel: Thank you! I remember now! the candies that were above the door were blue, blue, red, green.");
+   		}, 1);
     }
     else {
         alert ("wrong code try again");
