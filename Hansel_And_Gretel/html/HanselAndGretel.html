@@ -2,15 +2,23 @@
     <head>
         <link rel="stylesheet" href="../css/HanselAndGretel.css">
         <script src="../js/HanselAndGretel.js"></script> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        <script src="../js/colorPuzzle.js"></script>
     </head>
     <body>
-        <img src="../media/oven.png" id="oven">
-        <img src="../media/Hansel-In-Cage---Cell-Prison-Child-People-Fairytale-KS2.png" id="hansel_in_cage">
+        <img src="../media/oven.png" id="oven" class="myImg" onclick="oven()">
+        <img src="../media/Hansel-In-Cage---Cell-Prison-Child-People-Fairytale-KS2.png" id="hansel_in_cage" onclick="cage()">
         <div id="door" onclick="exit()"> </div>
-        <div id="colorPuzzle"> 
-
+        <div id="colorPuzzle">  </div>
+        <div class="pop" id="pop">
+            <button id="exit" onclick="popDown()"> X</button>
+            <p id="text">Write the code to unlock the cage</p>
+            <div id="code_row">
+            <input type="number" placeholder="0" class="num" id="num1">
+            <input type="number" placeholder="0" class="num" id="num2">
+            <input type="number" placeholder="0" class="num" id="num3">
+            <input type="number" placeholder="0" class="num" id="num4">
+            </div>
+            <br>
+            <button id="submit" onclick="submit()"> submit</button>
         </div>
     </body>
 </html>
