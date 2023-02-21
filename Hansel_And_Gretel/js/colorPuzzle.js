@@ -33,12 +33,12 @@ $(document).ready(function(){
     console.log(code);
 
     //create the cells and add them to the board
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i < 44; i++){
         let cell = "<div class=\"boardCell\" id=board"+i+"></div>"
         $(".board").append(cell);
     }
         //create cells for the pegs
-        for(let i = 0; i < 4; i++){
+        for(let i = 0; i < 44; i++){
             let cell = "<div class=\"pegCell\" id=peg"+i+"></div>"
             $(".pegs").append(cell);
         }
