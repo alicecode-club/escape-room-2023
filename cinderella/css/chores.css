@@ -1,4 +1,6 @@
 body{
     background-image: url("../images/page2.jpg");
     background-size: cover;
+    font-family: 'Nanum Myeongjo';
+    color:aliceblue;
 }
