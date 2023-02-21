@@ -9,7 +9,8 @@ body{
     right: 55%;
     height: 100px;
     width: 50px;
-    bottom: 20%;}
+    bottom: 20%;
+}
 
 #riddleDiv{
     display: flex;
@@ -20,6 +21,9 @@ body{
 #textDiv{
     /*background-color: blue;*/
     color: #FEEDBF;
+    margin-top: -30px;
+
+    
 }
 
 #coachmanDiv{
@@ -69,9 +73,19 @@ body{
     display: flex;
     justify-content: flex-end;
     width: 40%;
-    
     position: fixed;
     right: 0;
     bottom: 0;
 }
 
+#Header{
+    margin-top: 0px;
+    font-size: 50px;
+    color: #caae62;
+}
+
+
+#storyDiv{
+    top: -30px;
+    position: relative;
+}
