@@ -129,3 +129,15 @@ function activDoor() {
 function direction1() {
     window.location.replace("forest2.html");
 }
+
+function direction2() {
+    window.location.replace("forest3.html");
+}
+
+function direction3() {
+    window.location.replace("forest4.html");
+}
+
+function direction4() {
+    window.location.replace("forest1.html");
+}
