@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinderella Room</title>
 </head>
 
 <body>
     
-    <div id="container">
-    <div id="riddleDiv">
+    <div id="container"> 
         <div id="textDiv">
-        <h1 id="Header">Welcome the Cinderella room, friend!</h1>
+        <h1 id="Header">Welcome, my friend!</h1>
         <div id="storyDiv">
         <h1>The fairy godmother transformed me into someone else <br/>
              because Cinderella couldn't get to the ball by herself. <br/>
@@ -29,15 +29,14 @@
              and over their bodies their families cried.</h1>
         </div>
     </div>
-    </div>
     <div id="doorAlign">
     <div id="door"><img src="../images/door.png"></div>
 </div>
 <div id="spaceBetween"></div>
 </div>
 
-    <div id="coachmanDiv" onclick="nextRoom()"></div>
-    <div id="coachmenDivLegs" onclick="nextRoom()"></div>
+    <div id="coachmanDiv" onclick="doorAppear()"></div>
+    <div id="coachmenDivLegs" onclick="doorAppear()"></div>
 
 </body>
 </html>
