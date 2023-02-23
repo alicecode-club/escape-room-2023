@@ -122,7 +122,7 @@ $(document).ready(function(){
             $("#secretColor2").css("background-color", code[1]);
             $("#secretColor3").css("background-color", code[2]);
             $("#secretColor4").css("background-color", code[3]);
-            localStorage.getItem("code_solved",true);
+            localStorage.setItem("code_solved",true);
             window.location.replace("../html/HanselAndGretel.html");
         }
         else {

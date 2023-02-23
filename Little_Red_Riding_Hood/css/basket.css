@@ -45,3 +45,17 @@ body{
     height: 130px;
     margin-left: 770px;
 }
+
+#items_counter {
+    padding: 8px;
+    width: 250px;
+    height: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 119);
+    margin-left: 1400px;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
