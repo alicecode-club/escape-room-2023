@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example_room.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Escape Room!</title>
+    <script>
+        var hasKey = false;
+
+        function tryKnob(){ 
+            if(hasKey){
+                alert("You opened the lock!");
+                // add THIS
+                if(document.getElementById("alice_img").src.endsWith("alicecode_girl_bw.webp")){
+                    
+                    alert("You need to answer alice's question before you can leave!");
+                }
+                else{
+                    // escape the room!
+                    document.getElementById("escapeBtn").style.visibility = "visible";
+                }
+                // end of add THIS
+            }
+            else{
+                alert("Sorry, it's locked. Can you find the key?");
+            }
+        }
+
+        function pickUpKey(){
+            hasKey = true;
+            alert("You pick up the key and put it in your pocket");
+            document.getElementById("key").style.visibility = "hidden";
+        }
+    </script>
+
+    <!-- Start of part 1/2 to add -->
+    <link rel="stylesheet" href="../alicecode_questions.css">
+    <script src="../alicecode_questions.js"></script>
+    <!-- End of part 1/2 to add -->
+
+</head>
+<body>
+    <div id="room">
+
+        <!-- Start of part 2/2 to add: CHANGE THE INPUT (1) TO ROOM NUMBER -->
+       <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion(1)" src="../alicecode_girl_bw.webp">
+        <div class="alice_popup" id="alice_popup">
+        <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+        <div id="alice_question_in_html"></div>
+        <button id="submit_btn" onclick="checkAliceAnswer(1)">Submit</button>
+        </div>
+        <!-- End of part 1/2 to add -->
+
+       <img id="door" src="EscapeRoom_door.png">
+       <img id="knob" onclick="tryKnob()" src="EscapeRoom_knob.png">
+       <img id="key" onclick="pickUpKey()" src="EscapeRoom_key.png">
+       <button id="escapeBtn">Get Out of Here!</button>
+    </div>
+</body>
+</html>

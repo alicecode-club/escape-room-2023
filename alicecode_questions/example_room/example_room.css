@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    width: 100%;
+    height: 100%;
+    background-image: url("EscapeRoom_room.png");    
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+#room > * {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#door {
+    top: 29%;
+    left: 21%;
+    height: 62%;
+    width: 24%;
+}
+
+#knob {
+    top: 55%;
+    left: 37%;
+    height: 9%;
+    width: 3%;
+}
+
+#key {
+    top: 86%;
+    left: 75%;
+    height: 12%;
+    width: 2%;
+    transform: rotate(80deg);
+}
+
+#escapeBtn {
+    width: 200px;
+    height: 80px;
+    top: 403px;
+    left: 332px;
+    visibility: hidden; /* put "visible" to test it*/
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    font-weight: bold;
+}

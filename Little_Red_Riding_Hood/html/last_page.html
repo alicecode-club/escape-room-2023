@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    body{        
+        background-image: url("../images/bg.JPG");
+        background-repeat: no-repeat;
+        background-size: 100% 690px;
+    }
+    .box2{
+        position: relative;
+        bottom:60%;
+        left: -2%;
+        height: 460px;
+        width: 420px;
+        background-color: transparent;
+
+    }
+    .ggrandma{
+        position: absolute;
+        top: 100px;
+        left: 93%;
+        height:100px;
+        width:80px;
+    }
+    .wwolf{
+        position: absolute;
+        top:220px;
+        left: 93%;
+        height:50px;
+        width:80px;
+    }
+    .ccape{
+        position: absolute;
+        top:300px;
+        left: 94%;
+        height:80px;
+        width:55px;
+    }
+    .bbook{
+        position: absolute;
+        top:390px;
+        left: 94%;
+        height:60px;
+        width:55px;
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box2" onclick="door()">
+        
+    </div>
+    <div class="grandma">
+        <img class="ggrandma" onclick="grandma()" src="../images/grandma.png" alt="">
+    </div>
+    <div class="wolf">
+        <img class="wwolf" onclick="wolf()" src="../images/wolf.png" alt="">
+    </div>
+    <div class="cape">
+        <img class="ccape" onclick="cape()" src="../images/cape.png" alt="">
+    </div>
+    <div class="book">
+        <img class="bbook"  onclick="book()" src="../images/book.png" alt="">
+    </div>
+</body>
+<script>
+    function grandma(){
+        alert("First Number Is 2")
+    }
+    function wolf(){
+        alert("Second Number Is 3")
+    }
+    function cape(){
+        alert("Third Number Is 6")
+    }
+    function book(){
+        alert("Forth Number Is 9")
+    }
+    function door(){
+        let code=prompt("Enter Code:")
+        if (code=="2369"){
+            window.location.assign("../cinderella/html/cinderella.html")
+        }
+        else{
+            alert("Sorry, Try Again...")
+        }
+    }
+</script>
+</html>

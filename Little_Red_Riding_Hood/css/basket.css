@@ -7,24 +7,55 @@ body{
 }
 
 #items_div {
-    width: 1010px;
-    height: 250px;
+    width: 920px;
+    height: 160px;
+    margin-left: 100px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
 
 #wolf {
-    background-color: white;
-    width: 110px;
+    width: 130px;
     height: 110px;
-    /*margin-left: 900px;
-    margin-top: 60px;*/
 }
 
 #grandmother {
-    background-color: white;
     width: 110px;
-    height: 110px;
-    /*margin-left: 100px;
-    margin-bottom: 300px;*/
+    height: 180px;
+}
+
+#explane_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.724);
+}
+
+
+#cape {
+    width: 120px;
+    height: 120px;
+    margin-left: 1370px;
+}
+
+#book {
+    width: 150px;
+    height: 130px;
+    margin-left: 770px;
+}
+
+#items_counter {
+    padding: 8px;
+    width: 250px;
+    height: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 119);
+    margin-left: 1400px;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: middle;
 }
