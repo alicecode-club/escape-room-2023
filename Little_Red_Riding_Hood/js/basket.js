@@ -52,7 +52,7 @@ function items_counter(id) {
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
-        /*window.location.replace("../html/last_page.html");*/
+        window.location.replace("../html/last_page.html");
     }
 
     console.log(items_list);
