@@ -132,7 +132,7 @@ function direction1() {
 
 function direction2() {
     window.location.replace("forest3.html");
-}
+} pusreplace("forest4.html");
 
 function direction3() {
     window.location.replace("forest4.html");
