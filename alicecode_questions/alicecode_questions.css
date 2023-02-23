@@ -1,0 +1,95 @@
+.alicecode_girl{
+    zoom: 50%;
+}
+  
+.alice_popup {
+    background-color: #d83776; /* alicecode logo pink */
+    font-size: 100%;
+    color: #FCFCFC;
+    top: 0;
+    left:50%;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index:2;
+ }
+ 
+ .alice_popup #alice_popup_exit{
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background-color: transparent;
+    font-size: 150%;
+    font-family: 'Heebo', sans-serif;
+    border: none;
+    color: #FCFCFC;
+ }
+ .alice_popup #alice_popup_exit:hover {
+    color: black;
+  }
+ 
+ .alice_question_popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    z-index:2;
+ }
+
+ #alice_question_in_html {
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px;
+ }
+
+.alice_popup #submit_btn {
+    float: right;
+    border-radius: 8px;
+    background-color: #634494; /* alicecode logo purple */
+    border: none;
+    color: white;
+    padding: 12px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 20px 20px 0px;
+    cursor: pointer;
+
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px;
+}
+
+.alice_popup #alice_input_answer {
+    float: right;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    color: #634494; /* alicecode logo purple */;
+    padding: 12px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 600; 
+    line-height: 20px;
+}
