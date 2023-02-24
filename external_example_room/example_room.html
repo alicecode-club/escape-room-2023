@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="example_room.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Escape Room!</title>
+    <title>External Escape Room!</title>
     <script>
 
-        // Start of add this. Change to your relative location and correct room number (1-6)
-        localStorage.setItem("roomNumber",1);
-
-        // I had to choose a diff name because of second script
-        let fairyTaleroomNumber = 1;
-        localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../");
-        // End of add this 
+        // ~ Start of add this. Change to your relative location and correct room number (1-6)
+        let fairyTaleroomNumber = 2; // I had to choose a diff name because of second script
+        localStorage.setItem("roomNumber",fairyTaleroomNumber);
+        localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
+        // ~ End of add this 
 
         var hasKey = false;
 
         function tryKnob(){ 
             if(hasKey){
                 alert("You opened the lock!");
-                // add THIS
+                // ~ add THIS
                 if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
                     alert("You need to answer alice's question before you can leave!");
                 }
@@ -32,7 +30,7 @@
                     //just for testing
                     localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
                 }
-                // end of add THIS
+                // ~ end of add THIS
             }
             else{
                 alert("Sorry, it's locked. Can you find the key?");
@@ -47,8 +45,8 @@
     </script>
 
     <!-- Start of html part 1/2 to add. Change to your relative location -->
-    <link rel="stylesheet" href="../alicecode_questions.css">
-    <script src="../alicecode_questions.js"></script>
+    <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
+    <script src="../alicecode_questions/alicecode_questions.js"></script>
     <!-- End of html part 1/2 to add -->
 
 </head>
@@ -56,7 +54,7 @@
     <div id="room">
 
         <!-- Start of html part 2/2 to add: change img src -->
-       <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_girl_bw.webp">
+       <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp">
         <div class="alice_popup" id="alice_popup">
         <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
         <div id="alice_question_in_html"></div>

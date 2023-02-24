@@ -1,4 +1,12 @@
-const alicecode_girl_webp_relative_location = "../alicecode_girl.webp"
+const roomNumber = localStorage.getItem("roomNumber");
+console.log("roomNumber is: "+ roomNumber);
+const relativeLocationToAliceFolder = localStorage.getItem(`relativeLocationToAliceFolder${roomNumber}`)?
+                                      localStorage.getItem(`relativeLocationToAliceFolder${roomNumber}`) :
+                                      "../alicecode_questions/" //default location
+                                      
+console.log("relativeLocation is: " + relativeLocationToAliceFolder);
+console.log("question answered is: " + localStorage.getItem(`alice_question${roomNumber}_answered`));
+
 const aliceQuestionsJson = '[' +
     '{"question":["Are we going to finish the game on time?","No","Yes we are!"],"multi_flag": true,"answer_number":2},' +
     '{"question":"Which date in March is our event?","answer":"14"},' +
@@ -12,9 +20,9 @@ const aliceQuestionsJson = '[' +
 ']'
 const aliceQuestions = JSON.parse(aliceQuestionsJson);
 
-function aliceQuestion(index){
-    // index-- because array indexes starts at 0 but it's easier to receive indexing to the room pages starting from 1
-    index--;
+function aliceQuestion(){
+    // array indexes starts at 0 but it's easier to receive indexing to the room pages starting from 1
+    index = roomNumber - 1;
     if(aliceQuestions[index].multi_flag==true){
         setMultiChoiceQuestionInHtml(aliceQuestions[index].question)   
     }
@@ -26,7 +34,8 @@ function aliceQuestion(index){
 }
 
 function setMultiChoiceQuestionInHtml(question){
-    let questionInHtml = `<p>${question[0]}</p>`
+    let questionInHtml = `<h1 id="alice_h1">Alice's Question:</h1>`
+    questionInHtml += `<p id="alice_p">${question[0]}</p>`
     for (let i=1; i<question.length;i++){
 
         questionInHtml += `<input type="radio" name="alicecode_choices" id="alicecode_choice${i}" value="${question[i]}">` +
@@ -43,8 +52,8 @@ function setInputQuestionInHtml(question){
 }
 
 
-function checkAliceAnswer(index){
-    index--;
+function checkAliceAnswer(){
+    index = roomNumber - 1;
     if(aliceQuestions[index].multi_flag==true){
         checkAliceMultiChoiceAnswer(index); 
     }
@@ -56,9 +65,7 @@ function checkAliceAnswer(index){
 function checkAliceMultiChoiceAnswer(index){
     let i = aliceQuestions[index].answer_number
     if(document.getElementById(`alicecode_choice${i}`).checked==true){
-        alert("correct!")
-        document.getElementById("alice_img").src = alicecode_girl_webp_relative_location; 
-        closeAlicePopup();
+        correctAnswerActions();
     }
     else{
         alert("nope. try again!")
@@ -67,13 +74,18 @@ function checkAliceMultiChoiceAnswer(index){
 
 function checkAliceInputAnswer(index){
     if(document.getElementById('alice_input_answer').value.toLowerCase() === aliceQuestions[index].answer){
-        alert("correct!")
-        document.getElementById("alice_img").src = alicecode_girl_webp_relative_location; 
-        closeAlicePopup();
+        correctAnswerActions();
     }
     else{
         alert("nope. try again!")
     }
+}
+
+function correctAnswerActions(){
+    alert("correct!");
+    localStorage.setItem(`alice_question${roomNumber}_answered`, "true");
+    document.getElementById("alice_img").src = relativeLocationToAliceFolder + "alicecode_girl.webp"; 
+    closeAlicePopup();
 }
 
 function closeAlicePopup() {
