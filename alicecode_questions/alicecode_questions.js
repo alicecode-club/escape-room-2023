@@ -1,3 +1,5 @@
+
+
 const roomNumber = localStorage.getItem("roomNumber");
 console.log("roomNumber is: "+ roomNumber);
 const relativeLocationToAliceFolder = localStorage.getItem(`relativeLocationToAliceFolder${roomNumber}`)?
@@ -7,16 +9,48 @@ const relativeLocationToAliceFolder = localStorage.getItem(`relativeLocationToAl
 console.log("relativeLocation is: " + relativeLocationToAliceFolder);
 console.log("question answered is: " + localStorage.getItem(`alice_question${roomNumber}_answered`));
 
+(function($) {
+    $(document).ready(function() {
+        if(localStorage.getItem(`alice_question${roomNumber}_answered`)){
+            document.getElementById("alice_img").src = relativeLocationToAliceFolder + "alicecode_girl.webp"; 
+        }
+    });
+})(jQuery);
+
 const aliceQuestionsJson = '[' +
     '{"question":["Are we going to finish the game on time?","No","Yes we are!"],"multi_flag": true,"answer_number":2},' +
     '{"question":"Which date in March is our event?","answer":"14"},' +
-    '{"question":"question3","answer":"answer3"},' +
+    '{"question":[' + 
+        '"Which woman won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation?",' +
+        '"Marie Curie",' +
+        '"Rosalind Franklin",' +
+        '"Lise Meitner",' +
+        '"Barbara McClintock"],' +
+        '"multi_flag": true, "answer_number":1},' +
+    '{"question":"Two people, Dony and Tony, were under police investigation. The police are aware that only one of them can tell the truth and one can lie. During the investigation Tony says: ~we are both liars~. Who is telling the truth?","answer":"Dony"},' +
+    '{"question":[' + 
+        '"Who is the only woman to have received, by herself (unshared), a Nobel Prize for Medicine?",' +
+        '"Rosalyn Sussman Yalow",' +
+        '"Gerty Theresa Cori",' +
+        '"Barbara McClintock",' +
+        '"Rita Levi-Montalcini"],' +
+        '"multi_flag": true, "answer_number":3},' +
     '{"question":[' +
-        '"Please select your favorite Web language:",' +
-        '"CSS",' +
-        '"HTML",' +
-        '"JS"],' +
-        '"multi_flag": true,"answer_number":"3"}' +
+        '"Who developed the signal flares that are still used by the U.S. Navy?",' +
+        '"Esther Conwell",' +
+        '"Beulah Louise Henry",' +
+        '"Beatrice Hicks",' +
+        '"Martha Coston"],' +
+        '"multi_flag": true,"answer_number":4},' +
+    '{"question": "Two tribes live on the island of true and false. One tribe only speaks the truth and the other only lies. Upon your arrival to the island you meet a girl, a woman and a man. <br>The girl says: ~If two of the adults speak the truth, then I am telling lies~. <br>Which tribe is the girl from?",' +
+    '"answer":"True"},' +
+    '{"question":[' +
+        '"Who invented signal hopping, which was a precursor to wi-fi, GPS, and bluetooth?",' +
+        '"Hertha Ayrton",' +
+        '"Emily Warren Roebling",' +
+        '"Edith Clark",' +
+        '"Hedy Lamar"],' +
+        '"multi_flag": true,"answer_number":4}' +
 ']'
 const aliceQuestions = JSON.parse(aliceQuestionsJson);
 
@@ -44,6 +78,7 @@ function setMultiChoiceQuestionInHtml(question){
     document.getElementById("alice_question_in_html").innerHTML = questionInHtml
 }
 
+// I have a bug here, this doesn't look good
 function setInputQuestionInHtml(question){
     let questionInHtml = `<p>${question}</p><br>` +
     '<label for="fname">Your answer:</label><br>'+
