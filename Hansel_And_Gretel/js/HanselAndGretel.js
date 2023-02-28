@@ -11,6 +11,8 @@ function exit() {
     else {
         alert("you escaped!");
         localStorage.removeItem("code_solved");
+        window.location.replace(".../the_little_mermaid/html/littel.index.html");
+        
     }
 }
 
@@ -28,8 +30,7 @@ function cage() {
         popUp();
     }
     if (cagePuzzle==true){
-        alert ("Hansel: Thank you! I remember now! the candies that were above the door were blue, blue, red, green.");
-        document.getElementById("hansel").style.display="block";
+        alert ("Hansel: You already forgot? the candies that were above the door were blue, blue, red, green.");
     }
 }
 
@@ -54,6 +55,7 @@ function submit() {
         cagePuzzle=true;
         setTimeout(function(){
 			alert ("Hansel: Thank you! I remember now! the candies that were above the door were blue, blue, red, green.");
+            document.getElementById("hansel").classList.add("hansel2");
    		}, 1);
     }
     else {
@@ -61,3 +63,8 @@ function submit() {
     }
 }
 
+function hansel() {
+    if (cagePuzzle==true){
+        alert ("Hansel: You already forgot? the candies that were above the door were blue, blue, red, green.");
+    }
+}

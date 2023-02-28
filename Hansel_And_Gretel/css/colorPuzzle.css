@@ -10,8 +10,8 @@
 
 .board{
     display: grid;
-    height: 100%;
     float: left;
+
 }
 
 .pegs{
@@ -26,47 +26,37 @@
     display: grid;
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(3, 100px);
-    width: 200px;
-    height: 300px;
+    width: 10.5%;
+    height: 32.5%;
     border: 5px solid black;
-    margin: 0 auto;
-    margin-top: 10px;
+    top: 15%;
+    left: 45%;
+    position: fixed;
 }
 
 .currentColor{
-    width: 200px;
-    height: 50px;
+    width: 10.5%;
+    height: 6%;
     border: 5px solid black;
-    margin: 0 auto;
-    margin-top: 10px;
+    top: 49%;
+    left: 45%;
+    position: fixed;
 }
 
-.code{
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(1, 50px);
-    width: 200px;
-    height: 50px;
-    border: 5px solid black;
-    margin: 0 auto;
-    margin-top: 10px;
-}
 
-.secretColor{
-    background-color: black;
-}
 
 .submit{
-    width: 200px;
-    height: 50px;
+    position: fixed;
+    width: 10.5%;
+    height: 4%;
     border: 5px solid black;
-    margin: 0 auto;
-    margin-top: 10px;
-    font-size: 48px;
+    font-size: 184%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: gray;
     opacity: .7;
+    left: 45%;
+    top: 57%;
 }
 
 .submit:hover{
@@ -107,4 +97,5 @@
     position: fixed;
     font-size: 300%;
     color: aliceblue;
+    top: 60%;
 }

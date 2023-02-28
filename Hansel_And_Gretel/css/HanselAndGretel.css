@@ -98,11 +98,20 @@ body {
     position: fixed;
  }
 
- #hansel {
+ .hansel {
    height: 60%;
    width: 30%;
    position: fixed;
    top: 47%;
    left: 42%;
-   display: none;
+   visibility: hidden;
+ }
+
+ .hansel2 {
+   height: 60%;
+   width: 30%;
+   position: fixed;
+   top: 47%;
+   left: 42%;
+   visibility: visible;
  }
