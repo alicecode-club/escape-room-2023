@@ -1,43 +1,34 @@
 body{
-    font-family: 'Marck Script', cursive;
-    background-image: url("../images/BackgroundImageCinderella.png");
+    font-family: 'Nanum Myeongjo', serif;
+    background-image: url("../images/cinderellaBackground.png");
     background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-#title{
-    text-align: center;
-    position: fixed;
-    right: 55%;
-    height: 100px;
-    width: 50px;
-    bottom: 20%;}
-
-#riddleDiv{
-    display: flex;
-    justify-content: flex-start;
-    padding: 2%;
-}
-
 #textDiv{
-    /*background-color: blue;*/
     color: #FEEDBF;
+   margin-left: 15px;
+   font-size:1vw;
+    
 }
 
 #coachmanDiv{
-    /*background-color: red;*/
     position: fixed;
-    right: 47%;
-    height: 200px;
-    width: 100px;
-    bottom: 30%;
+    right: 27.5%;
+    height: 20%;
+    width: 3.5%;
+    bottom: 35%;
+    transform: rotate(-1deg);
 }
 
 #coachmenDivLegs{
-    /*background-color: red;*/
     position: fixed;
-    right: 55%;
-    height: 100px;
-    width: 50px;
-    bottom: 20%;
+    right: 30.5%;
+    height: 12%;
+    width: 2.5%;
+    bottom: 29%;
+    transform: rotate(-1deg);
 }
 
 
@@ -62,16 +53,25 @@ body{
 #container{
     display: flex;
     flex-direction: row;
-    
 }
 
 #doorAlign{
     display: flex;
     justify-content: flex-end;
     width: 40%;
-    
     position: fixed;
     right: 0;
     bottom: 0;
 }
 
+#Header{
+    font-size: 120px;
+    color: #caae62;
+    font-size:8vw;
+}
+
+
+#storyDiv{
+    top: -30px;
+    position: relative;
+}

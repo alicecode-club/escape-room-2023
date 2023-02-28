@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example_room.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Escape Room!</title>
+    <script>
+
+        // Start of add this. Change to your relative location and correct room number (1-6)
+        localStorage.setItem("roomNumber",1);
+
+        // I had to choose a diff name because of second script
+        let fairyTaleroomNumber = 1;
+        localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../");
+        // End of add this 
+
+        var hasKey = false;
+
+        function tryKnob(){ 
+            if(hasKey){
+                alert("You opened the lock!");
+                // add THIS
+                if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
+                    alert("You need to answer alice's question before you can leave!");
+                }
+                else{
+                    // escape the room!
+                    document.getElementById("escapeBtn").style.visibility = "visible";
+
+                    //just for testing
+                    localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
+                }
+                // end of add THIS
+            }
+            else{
+                alert("Sorry, it's locked. Can you find the key?");
+            }
+        }
+
+        function pickUpKey(){
+            hasKey = true;
+            alert("You pick up the key and put it in your pocket");
+            document.getElementById("key").style.visibility = "hidden";
+        }
+    </script>
+
+    <!-- Start of html part 1/2 to add. Change to your relative location -->
+    <link rel="stylesheet" href="../alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
+
+</head>
+<body>
+    <div id="room">
+
+        <!-- Start of html part 2/2 to add: change img src -->
+        <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_girl_bw.webp" style="left:0%;top:0%">
+        <div class="alice_popup" id="alice_popup">
+        <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+        <div id="alice_question_in_html"></div>
+        <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+        </div>
+        <!-- End of html part 2/2 to add -->
+
+       <img id="door" src="EscapeRoom_door.png">
+       <img id="knob" onclick="tryKnob()" src="EscapeRoom_knob.png">
+       <img id="key" onclick="pickUpKey()" src="EscapeRoom_key.png">
+       <button id="escapeBtn">Get Out of Here!</button>
+    </div>
+</body>
+</html>

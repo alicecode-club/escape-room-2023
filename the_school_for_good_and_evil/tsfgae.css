@@ -1,0 +1,488 @@
+.map{
+    background: url('https://evernever.com/wp-content/uploads/2021/09/bc6ec1-20170918-the-map-of-the-school-for-good-and-evil.jpg');     
+    background-size: cover;
+}
+
+.chess {
+    height: 30px;
+    width: 50x;
+    margin-top: 0.2%;
+    margin-left: 51.5%;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+.sfgaeChessPage {
+    background-image: url('https://i.pinimg.com/474x/69/7b/4c/697b4c767d38d2098a1a5cbedaa32ba0.jpg');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.chessSqure {
+    font-family: 'Lobster', cursive;  
+    width: 600px;
+    height: 130px;
+    background-color: azure;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28%;
+    font-size: 50px;
+}
+
+.letterSqure {
+    width: 800px;
+    height: 130px;
+    background-color: azure;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28%;
+    font-family: 'Lobster', cursive;  
+    font-size: 50px;
+}
+
+.coverImg {
+    width: 260px;
+    height: 400px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.coverImg:hover {
+    opacity: 0.6;
+}
+
+.imgCoverOnclick {
+    opacity: 0.3;
+    width: 260px;
+    height: 400px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.coverImgContanior {
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+}
+#covers1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#covers2{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.coverQuestionNum {
+    font-size: 150px ;
+    color:rgb(152, 230, 232);
+    font-family: 'Solitreo', cursive;
+    margin-left:48%;
+}
+
+.backToMain {
+    margin-top: 15%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.letter {
+    height: 30px;
+    width: 50x;
+    margin-top: 6%;
+    margin-left: 29%;
+    cursor: pointer;
+}
+
+.mask {
+    height: 30px;
+    width: 50x;
+    margin-top: 7.5%;
+    margin-left: 35%;
+    cursor: pointer; 
+}
+
+.sfgaeLetterPage {
+    background-image: url('https://i.pinimg.com/736x/44/99/4a/44994abb840d4a694eacc5847629f87d.jpg');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coverImgLetter {
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.coverImgLetter:hover {
+    opacity: 0.6;
+}
+
+
+.carriage {
+    height: 50px;
+    width: 60px;
+    margin-top: 34%;
+    margin-left: 43%;
+    cursor: pointer;
+}
+
+.letterText {
+    height: 300px;
+    width: 100%;
+    margin-top: 20%;
+    background-color: rgb(223, 231, 202);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLineLetter {
+    font-size: 30px;
+    font-family: 'Itim', cursive;
+}
+
+.letterLetter {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pen {
+    height: 30px;
+    width: 50x;
+    margin-top: 26%;
+    margin-left: 60%;
+    cursor: pointer;
+}
+
+.penContanior {
+    background-image: url('https://i.pinimg.com/564x/12/0b/9b/120b9b64644b9d233da75e36f0f1c634.jpg');
+    width: 20%;
+    height: 20%;
+}
+
+.codeEnterecpageInside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+  position: fixed;
+  top: 30%;
+  left: 28%;
+}
+
+.codeEnterecpage {
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(147, 203, 209);
+    opacity: 0.8;
+}
+
+.letterButton {
+  margin-top: 20px;
+  align-items: center;
+  background: #d5dcb6;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+}
+
+.letterButton:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+  .letterButton {
+    padding: 24px;
+  }
+}
+
+.door {
+    height: 50px;
+    width: 50x;
+    margin-top: 7.5%;
+    margin-left: 35%;
+    cursor: pointer; 
+}
+.endBox {
+    margin-top: 60px;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+}
+
+.moveOnLetterButton {
+    margin-left: 50%;
+}
+
+.coverQuestionWorld {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 55%;
+    font-size: 65px;
+    color: rgba(162, 50, 50, 0.82);
+}
+
+.letterWorngButton {
+  margin-top: 20px;
+  align-items: center;
+  background: #c10e0e;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+}
+
+.letterWorngButton:hover {
+    background: #e0ae3b;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+  }
+  
+  @media (min-width: 768px) {
+    .letterWorngButton {
+      padding: 24px;
+    }
+  }
+
+  .letterFirstP {
+    font-family: 'Solitreo', cursive;
+    font-size: 34px;
+  }
+
+  .letterFirstP2 {
+    font-family: 'Solitreo', cursive;
+    font-size: 25px;
+    margin-right: 22%;
+  }
+
+  .hint {
+    margin-left: 50%;
+    margin-top: 27%;
+  }
+
+  .penInstraction2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 170%;
+  }
+
+
+.bodyEnd {
+    background: url("https://i.pinimg.com/564x/df/cc/18/dfcc1881725e8ff772c6f64fa1b434e6.jpg");
+    background-size: cover;
+}
+
+.centerEnd {
+    color:#6f3e83;
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 40%;
+    margin-left: 36%;
+}
+
+    
+
+
+.textEnd {
+  width: 600px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.textEnd:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.textEnd:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.disableDiv {
+  pointer-events:none;
+}
+
+.enAbleDiv {
+  pointer-events: block;
+}
+
+.digetsContanior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hintB {
+  font-family: 'Solitreo', cursive;
+  font-size: 30px;
+}
+
+
+.penButton {
+  margin-left: 20%;
+  background-color: #29bbd1;
+  margin-top: 20%;
+  margin-bottom: 2%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.penButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .penButton {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.firstCheas {
+  background-color: #00ffd5;
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

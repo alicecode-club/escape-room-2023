@@ -1,29 +1,108 @@
 body {
     background: url(../media/candy_house.jpg) no-repeat center center fixed; 
     background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
   }
 
 #oven {
-    margin-left: 27%;
-    margin-top: 24%;
+    left: 27%;
+    top: 44%;
     height: 36%;
+    width: 15%;
+    position: fixed;
+
 }
 
 #hansel_in_cage {
-    margin-left: 10%;
-    margin-top: 15%;
+    left: 45%;
+    top: 35%;
     height: 60%;
+    width: 25%;
+   position: fixed;
 }
 
 #door {
-    background-color: black;
-    margin-bottom: 9%;
-    margin-top: 9%;
+    bottom: 9%;
+    top: 9%;
     padding-right: 17%;
-    margin-left: 2%;
+    left: 80%;
+    position: fixed;
 }
 
+.pop {
+    text-align: center;
+    background-color: #aa7379;
+    font-size: 300%;
+    color: #FCFCFC;
+    top: 0;
+    left:50%;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    position: fixed;
+ }
+ 
+ .popUp {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    position: fixed;
+    
+ }
 
+ #exit {
+    background-color: #aa7379 ;
+    font-size: 150%;
+    border: none;
+    left: 120%;
+    position: fixed;
+ }
+
+ #code_row {
+    display: flex;
+    justify-content: space-around;
+    height:15%;
+    position: fixed;
+ }
+
+ .num {
+    width: 10%;
+    font-size: 30%;
+ }
   
+ #submit {
+    font-size: 40%;
+    width: 25%;
+    height: 10%;
+    color:black;
+    border-color: gray;
+    border-width: 5px;
+    background-color: white;
+    position: fixed;
+    bottom: 10%;
+
+ }
+ #submit:hover {
+    font-size: 40%;
+    padding: 0.5%;
+    color:white;
+    background-color: gray;
+    border-width: 5px;
+    border-color: gray;
+    position: fixed;
+ }
+
+ #hansel {
+   height: 60%;
+   width: 30%;
+   position: fixed;
+   top: 47%;
+   left: 42%;
+   display: none;
+ }
