@@ -29,6 +29,7 @@ function cage() {
     }
     if (cagePuzzle==true){
         alert ("Hansel: Thank you! I remember now! the candies that were above the door were blue, blue, red, green.");
+        document.getElementById("hansel").style.display="block";
     }
 }
 
@@ -59,3 +60,4 @@ function submit() {
         alert ("wrong code try again");
     }
 }
+
