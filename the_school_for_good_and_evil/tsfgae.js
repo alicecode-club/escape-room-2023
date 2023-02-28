@@ -5,7 +5,7 @@ function activeChess() {
 function coverImgCheck(item,coverNum) {
         setImgNormal(item);
         document.getElementById(item + coverNum).className = "imgCoverOnclick";
-        // document.querySelector("#coverImage").disabled = true;
+        //  document.querySelector("#coverImage").disabled = true;
         //document.getElementById("coverImage").classList.add("hide");
     switch(item) {
       case "cover":
@@ -132,12 +132,25 @@ function direction1() {
 
 function direction2() {
     window.location.replace("forest3.html");
-} pusreplace("forest4.html");
-
-function direction3() {
-    window.location.replace("forest4.html");
 }
 
-function direction4() {
-    window.location.replace("forest1.html");
-}
+function checkDigetss() {
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var num3 = document.getElementById("num3").value;
+    if(num1 == 4 && num2 == 8 && num3 == 2) {
+        alert("Well done! You have found the legends!")
+        document.getElementById("penDivChess").className ="show";
+     }
+     else {
+        alert("Wrong! Try Again")
+     }
+    }
+    function direction3() {
+        window.location.replace("forest4.html");
+     }
+
+     function direction4() {
+        window.location.replace("forest1.html");
+    }
+    
