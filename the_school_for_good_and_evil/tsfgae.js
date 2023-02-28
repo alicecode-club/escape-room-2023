@@ -134,6 +134,13 @@ function direction2() {
     window.location.replace("forest3.html");
 }
 
+function direction4() {
+    window.location.replace("forest1.html");
+}
+
+function note(){
+    window.location.replace("note.html");
+}
 function checkDigetss() {
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
