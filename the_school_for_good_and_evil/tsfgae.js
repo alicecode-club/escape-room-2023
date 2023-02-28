@@ -141,3 +141,7 @@ function direction3() {
 function direction4() {
     window.location.replace("forest1.html");
 }
+
+function note(){
+    window.location.replace("note.html");
+}
