@@ -468,3 +468,21 @@
     padding: 0.25em 0.75em;
   }
 }
+
+.firstCheas {
+  background-color: #00ffd5;
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
