@@ -1,20 +1,62 @@
-const alicecode_girl_webp_relative_location = "../alicecode_girl.webp"
+
+
+const roomNumber = localStorage.getItem("roomNumber");
+console.log("roomNumber is: "+ roomNumber);
+const relativeLocationToAliceFolder = localStorage.getItem(`relativeLocationToAliceFolder${roomNumber}`)?
+                                      localStorage.getItem(`relativeLocationToAliceFolder${roomNumber}`) :
+                                      "../alicecode_questions/" //default location
+                                      
+console.log("relativeLocation is: " + relativeLocationToAliceFolder);
+console.log("question answered is: " + localStorage.getItem(`alice_question${roomNumber}_answered`));
+
+(function($) {
+    $(document).ready(function() {
+        if(localStorage.getItem(`alice_question${roomNumber}_answered`)){
+            document.getElementById("alice_img").src = relativeLocationToAliceFolder + "alicecode_girl.webp"; 
+        }
+    });
+})(jQuery);
+
 const aliceQuestionsJson = '[' +
     '{"question":["Are we going to finish the game on time?","No","Yes we are!"],"multi_flag": true,"answer_number":2},' +
     '{"question":"Which date in March is our event?","answer":"14"},' +
-    '{"question":"question3","answer":"answer3"},' +
+    '{"question":[' + 
+        '"Which woman won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation?",' +
+        '"Marie Curie",' +
+        '"Rosalind Franklin",' +
+        '"Lise Meitner",' +
+        '"Barbara McClintock"],' +
+        '"multi_flag": true, "answer_number":1},' +
+    '{"question":"Two people, Dony and Tony, were under police investigation. The police are aware that only one of them can tell the truth and one can lie. During the investigation Tony says: ~we are both liars~. Who is telling the truth?","answer":"Dony"},' +
+    '{"question":[' + 
+        '"Who is the only woman to have received, by herself (unshared), a Nobel Prize for Medicine?",' +
+        '"Rosalyn Sussman Yalow",' +
+        '"Gerty Theresa Cori",' +
+        '"Barbara McClintock",' +
+        '"Rita Levi-Montalcini"],' +
+        '"multi_flag": true, "answer_number":3},' +
     '{"question":[' +
-        '"Please select your favorite Web language:",' +
-        '"CSS",' +
-        '"HTML",' +
-        '"JS"],' +
-        '"multi_flag": true,"answer_number":"3"}' +
+        '"Who developed the signal flares that are still used by the U.S. Navy?",' +
+        '"Esther Conwell",' +
+        '"Beulah Louise Henry",' +
+        '"Beatrice Hicks",' +
+        '"Martha Coston"],' +
+        '"multi_flag": true,"answer_number":4},' +
+    '{"question": "Two tribes live on the island of true and false. One tribe only speaks the truth and the other only lies. Upon your arrival to the island you meet a girl, a woman and a man. <br>The girl says: ~If two of the adults speak the truth, then I am telling lies~. <br>Which tribe is the girl from?",' +
+    '"answer":"True"},' +
+    '{"question":[' +
+        '"Who invented signal hopping, which was a precursor to wi-fi, GPS, and bluetooth?",' +
+        '"Hertha Ayrton",' +
+        '"Emily Warren Roebling",' +
+        '"Edith Clark",' +
+        '"Hedy Lamar"],' +
+        '"multi_flag": true,"answer_number":4}' +
 ']'
 const aliceQuestions = JSON.parse(aliceQuestionsJson);
 
-function aliceQuestion(index){
-    // index-- because array indexes starts at 0 but it's easier to receive indexing to the room pages starting from 1
-    index--;
+function aliceQuestion(){
+    // array indexes starts at 0 but it's easier to receive indexing to the room pages starting from 1
+    index = roomNumber - 1;
     if(aliceQuestions[index].multi_flag==true){
         setMultiChoiceQuestionInHtml(aliceQuestions[index].question)   
     }
@@ -26,7 +68,8 @@ function aliceQuestion(index){
 }
 
 function setMultiChoiceQuestionInHtml(question){
-    let questionInHtml = `<p>${question[0]}</p>`
+    let questionInHtml = `<h1 id="alice_h1">Alice's Question:</h1>`
+    questionInHtml += `<p id="alice_p">${question[0]}</p>`
     for (let i=1; i<question.length;i++){
 
         questionInHtml += `<input type="radio" name="alicecode_choices" id="alicecode_choice${i}" value="${question[i]}">` +
@@ -35,6 +78,7 @@ function setMultiChoiceQuestionInHtml(question){
     document.getElementById("alice_question_in_html").innerHTML = questionInHtml
 }
 
+// I have a bug here, this doesn't look good
 function setInputQuestionInHtml(question){
     let questionInHtml = `<p>${question}</p><br>` +
     '<label for="fname">Your answer:</label><br>'+
@@ -43,8 +87,8 @@ function setInputQuestionInHtml(question){
 }
 
 
-function checkAliceAnswer(index){
-    index--;
+function checkAliceAnswer(){
+    index = roomNumber - 1;
     if(aliceQuestions[index].multi_flag==true){
         checkAliceMultiChoiceAnswer(index); 
     }
@@ -56,9 +100,7 @@ function checkAliceAnswer(index){
 function checkAliceMultiChoiceAnswer(index){
     let i = aliceQuestions[index].answer_number
     if(document.getElementById(`alicecode_choice${i}`).checked==true){
-        alert("correct!")
-        document.getElementById("alice_img").src = alicecode_girl_webp_relative_location; 
-        closeAlicePopup();
+        correctAnswerActions();
     }
     else{
         alert("nope. try again!")
@@ -67,13 +109,18 @@ function checkAliceMultiChoiceAnswer(index){
 
 function checkAliceInputAnswer(index){
     if(document.getElementById('alice_input_answer').value.toLowerCase() === aliceQuestions[index].answer){
-        alert("correct!")
-        document.getElementById("alice_img").src = alicecode_girl_webp_relative_location; 
-        closeAlicePopup();
+        correctAnswerActions();
     }
     else{
         alert("nope. try again!")
     }
+}
+
+function correctAnswerActions(){
+    alert("correct!");
+    localStorage.setItem(`alice_question${roomNumber}_answered`, "true");
+    document.getElementById("alice_img").src = relativeLocationToAliceFolder + "alicecode_girl.webp"; 
+    closeAlicePopup();
 }
 
 function closeAlicePopup() {
