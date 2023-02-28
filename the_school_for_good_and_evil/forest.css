@@ -3,6 +3,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    font-family: 'Mynerve', cursive;
 }
 
 .f1{
@@ -51,7 +52,8 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 50%
+    border-radius: 50%;
+    font-size: 40px;
 }
 
 .backToMain {
@@ -75,8 +77,17 @@
 }
 
 #eNote2{
-    
     flex-direction: center;
-
 }
 
+.noteForest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noteText {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 30px;
+}
