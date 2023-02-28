@@ -8,10 +8,10 @@ $(document).ready(function(){
     var currentColor = "white";
     var currentBoardCells = ["board40", "board41", "board42", "board43"];
     var currentPegCells = ["peg40", "peg41", "peg42", "peg43"]
-    var currentRow = 11;
-    var possibleColors = ["blue", "green", "red", "yellow", "orange", "pink"];
+    var currentRow = 1;
     var hasWon = false;
     var cell1Color, cell2Color, cell3Color, cell4Color;
+    var chose= ["white","white","white","white"];
     //dictionary of colors
     var colors = {
         "rgb(0, 128, 0)": "green",
@@ -24,21 +24,21 @@ $(document).ready(function(){
 
     //create the random color code
     var code = [
-        possibleColors[0], 
-        possibleColors[0],
-        possibleColors[2],
-        possibleColors[1]
+        "blue", 
+        "blue",
+        "red",
+        "green"
     ];
     
     console.log(code);
 
     //create the cells and add them to the board
-    for(let i = 0; i < 44; i++){
-        let cell = "<div class=\"boardCell\" id=board"+i+"></div>"
+    for(let i = 0; i < 4; i++){
+        let cell = "<div class=\"boardCell\" id="+i+"></div>"
         $(".board").append(cell);
     }
         //create cells for the pegs
-        for(let i = 0; i < 44; i++){
+        for(let i = 0; i < 4; i++){
             let cell = "<div class=\"pegCell\" id=peg"+i+"></div>"
             $(".pegs").append(cell);
         }
@@ -69,10 +69,9 @@ $(document).ready(function(){
     //change the color of a board cell on click
     $(".boardCell").click(function(){
         var id = $(this).attr("id");
-
-        if(isValid(id)){
             $(this).css("background-color", currentColor);
-        }
+            chose[id]=currentColor;
+         console.log(chose);   
     });
 
     //do actions when the submit button is clicked
@@ -99,24 +98,13 @@ $(document).ready(function(){
             "peg" + (currentRow*mult-1)];
     }
 
-    //check whether the cell clicked on is valid
-    function isValid(id){
-        if(currentBoardCells.includes(id) && hasWon === false){
-            return true;
-        }
-        return false;
-    }
-
     //check if the player has won
     function checkWin(){
-        if(code[0] === cell1Color &&
-            code[1] === cell2Color &&
-            code[2] === cell3Color &&
-            code[3] === cell4Color){
+        if(code[0]==chose[0] && code[1]==chose[1] && code[2]==chose[2] && code[3]==chose[3]){
             hasWon = true;
             code_solved=true;
             console.log(code_solved);
-            alert("Congratulations, you have won!\nThe code will now be displayed.");
+            alert("Congratulations, you have won!");
             //set the colors of the code box
             $("#secretColor1").css("background-color", code[0]);
             $("#secretColor2").css("background-color", code[1]);
