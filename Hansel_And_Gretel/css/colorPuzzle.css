@@ -43,8 +43,6 @@
     position: fixed;
 }
 
-
-
 .submit{
     position: fixed;
     width: 10.5%;
@@ -98,4 +96,10 @@
     font-size: 300%;
     color: aliceblue;
     top: 60%;
+}
+
+.boardCell {
+    border:1px solid black;
+    border-radius:50%;
+    background-color:white;
 }
