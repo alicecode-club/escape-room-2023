@@ -77,7 +77,12 @@
 }
 
 #eNote2{
+<<<<<<< HEAD
+    text-align: center;
+    color: white;
+=======
     flex-direction: center;
+>>>>>>> 0fa573219c63dd35792b45d37f6041b02e644a06
 }
 
 .noteForest {

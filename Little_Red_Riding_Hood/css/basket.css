@@ -9,16 +9,16 @@ body{
 
 #wolf {
     position: fixed;
-    width: 140px;
-    height: 110px;
+    width: 9.5%;
+    height: 13%;
     top: 5%;
     right: 39%;
 }
 
 #grandmother {
     position: fixed;
-    width: 110px;
-    height: 180px;
+    width: 7%;
+    height: 21.5%;
     top: 7%;
     left: 6%;
 }
@@ -27,7 +27,7 @@ body{
 #explane_text {
     position: fixed;
     font-family: 'Nunito', sans-serif;
-    font-size: 35px;
+    font-size: 215%;
     text-align: center;
     color: rgb(0, 0, 0);
     left: 23%;
@@ -38,16 +38,16 @@ body{
 
 #cape {
     position: fixed;
-    width: 120px;
-    height: 120px;
+    width: 8%;
+    height: 16%;
     top: 45%;
     right: 12%;
 }
 
 #book {
     position: fixed;
-    width: 150px;
-    height: 120px;
+    width: 10%;
+    height: 15%;
     top: 55.3%;
     right: 45.3%;
     transform: rotate(-45deg);
@@ -56,9 +56,9 @@ body{
 
 #items_counter {
     position: fixed;
-    padding: 8px;
-    width: 250px;
-    height: 28px;
+    padding: 0.4%;
+    width: 16%;
+    height: 4%;
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
     color: rgb(0, 0, 0);
