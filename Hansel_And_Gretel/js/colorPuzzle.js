@@ -34,8 +34,11 @@ $(document).ready(function(){
 
     //create the cells and add them to the board
     for(let i = 0; i < 4; i++){
-        let cell = "<div class=\"boardCell\" id="+i+"></div>"
-        $(".board").append(cell);
+        let cell1 = document.createElement("div");
+        cell1.setAttribute("type", 'div');
+        cell1.setAttribute("id",i);
+        cell1.setAttribute("class","boardCell");
+        $(".board").append(cell1);
     }
         //create cells for the pegs
         for(let i = 0; i < 4; i++){
@@ -46,10 +49,9 @@ $(document).ready(function(){
     //change the style of the board so you can view the rows
     $(".board").css("grid-template-rows", "repeat(11,73.18px)");
     $(".board").css("grid-template-columns", "repeat(4,73.18px)");
-    $(".boardCell").css("border", "1px solid black");
-    $(".boardCell").css("border-radius", "50%");
-    $(".boardCell").css("background-color", "white");
-
+    $(".board").css("position", "fixed");
+    $(".board").css("width", "20%");
+    $(".board").css("height", "10%");
 
 
     //add colors to the color board
@@ -240,15 +242,5 @@ $(document).ready(function(){
         }   
     }
 
-    //choose a random number from 1-4 that is not in the given array
-    function randomNum14(nums){
-        //generate a number from 1-4
-        let num = Math.floor(Math.random()*4) + 1;
-        //while that number has already been chosen
-        //  choose another one
-        while(nums.includes(num)){
-            num = Math.floor(Math.random()*4) + 1;
-        }
-        return num;
-    }
+
 });

@@ -1,0 +1,23 @@
+body{
+  font-family: 'Nova Round', cursive;
+  background-image:url("../images/sea.jpg");
+  background-size: cover;
+  margin-top: 100px;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+h1{
+  color: rgb(9, 19, 57);
+}
+h3,h1{
+  color: rgb(9, 19, 57);
+  text-align: center;
+}
+div{
+  transform: rotate(-1deg);
+}
+.q2{
+  color:grey;
+}

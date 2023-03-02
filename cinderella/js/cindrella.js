@@ -4,5 +4,5 @@ function doorAppear(){
   }
 
   function nextRoom(){
-    window.location.assign("../../cinderella/html/cinderella.html")
+    window.location.assign("../../Hansel_And_Gretel/html/HanselAndGretel.html")
   }
