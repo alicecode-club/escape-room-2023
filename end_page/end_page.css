@@ -1,17 +1,6 @@
-.endText {
-    font-family: 'Tilt Warp', cursive;
-<<<<<<< HEAD
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    height: 50%;
-  }
-=======
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
->>>>>>> dc6e4d59660e13443811332935ee442523711463
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+} 
