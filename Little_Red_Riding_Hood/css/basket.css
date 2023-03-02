@@ -1,52 +1,61 @@
 body{
     background-image: url("../images/basket.jpeg");
     background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 50vh;
 }
 
-#items_div {
-    width: 920px;
-    height: 160px;
-    margin-left: 100px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-}
 
 #wolf {
-    width: 130px;
+    position: fixed;
+    width: 140px;
     height: 110px;
+    top: 5%;
+    right: 39%;
 }
 
 #grandmother {
+    position: fixed;
     width: 110px;
     height: 180px;
+    top: 7%;
+    left: 6%;
 }
 
+
 #explane_text {
+    position: fixed;
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
     text-align: center;
     color: rgb(0, 0, 0);
+    left: 23%;
+    top: 35%;
     background-color: rgba(255, 255, 255, 0.724);
 }
 
 
 #cape {
+    position: fixed;
     width: 120px;
     height: 120px;
-    margin-left: 1370px;
+    top: 45%;
+    right: 12%;
 }
 
 #book {
+    position: fixed;
     width: 150px;
-    height: 130px;
-    margin-left: 770px;
+    height: 120px;
+    top: 55.3%;
+    right: 45.3%;
+    transform: rotate(-45deg);
 }
 
+
 #items_counter {
+    position: fixed;
     padding: 8px;
     width: 250px;
     height: 28px;
@@ -54,8 +63,8 @@ body{
     font-size: 30px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 119);
-    margin-left: 1400px;
-    margin-top: 50px;
+    top: 89.5%;
+    right: 2.5%;
     display: inline-block;
     vertical-align: middle;
 }

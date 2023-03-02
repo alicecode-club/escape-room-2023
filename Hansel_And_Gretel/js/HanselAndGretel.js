@@ -11,7 +11,7 @@ function exit() {
     else {
         alert("you escaped!");
         localStorage.removeItem("code_solved");
-        window.location.replace("../../the_little_mermaid/one.littel.index.html");
+        window.location.replace("../../the_little_mermaid/one.littel.html");
         
     }
 }
