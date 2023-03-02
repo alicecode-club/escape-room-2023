@@ -1,4 +1,5 @@
-
+.endText {
+    font-family: 'Tilt Warp', cursive;
     display: flex;
     flex-direction:column;
     justify-content:center;
