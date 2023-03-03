@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Question 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Question 1</h1>
+    <p>What sort of family were the three bears?</p>
+    <form onsubmit="checkAnswer1(); return false;">
+      <input type="radio" id="answer1a" name="answer1" value="a">
+      <label for="answer1a">A. uncles</label><br>
+      <input type="radio" id="answer1b" name="answer1" value="b">
+      <label for="answer1b">B. mother father and son</label><br>
+      <input type="radio" id="answer1c" name="answer1" value="c">
+      <label for="answer1c">C. friends</label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+function checkAnswer1() {
+  var userAnswer = document.querySelector('input[name="answer1"]:checked').value;
+
+  if (userAnswer === "b") {
+
+    localStorage.setItem("answer1", "mother father and son");
+    alert("Correct! Your answer has been saved.");
+
+    window.location.href = "zehava.html";
+  } else {
+
+    alert("Incorrect. Please try again.");
+  }
+}
+
+
+
+    </script>
+  </body>
+</html>

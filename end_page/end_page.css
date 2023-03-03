@@ -4,4 +4,36 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
 } 
+body{
+    background-image: url("backgroundendpage.jpg");
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    height: 43%; ;
+    width: 68%; ;
+    top: 40%;
+    left: 40%;
+    
+  }
+  .griditem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height:150px ;
+  }
+  .gridImg {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height:150px ;
+  }
