@@ -160,4 +160,5 @@ function checkDigetss() {
      function direction4() {
         window.location.replace("forest1.html");
     }
+
     
