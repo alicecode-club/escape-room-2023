@@ -7,6 +7,7 @@ body{
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  
 }
 h1{
   color: rgb(9, 19, 57);
@@ -17,7 +18,16 @@ h3,h1{
 }
 div{
   transform: rotate(-1deg);
+ 
+}
+h3:hover {
+  cursor: pointer;
+  background-color: rgb(255, 0, 187);
 }
 .q2{
   color:grey;
+}
+CA{
+  display: none;
+  
 }
