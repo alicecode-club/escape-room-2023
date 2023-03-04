@@ -6,7 +6,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
   <script src="js/lm.js"></script>
   <link href="css/lm.css" rel="stylesheet" type="text/css" >
-  <div id="cave"><img onclick="theNextRoom ()" id="doorImg" src="../the_little_mermaid/images/">  
 <!-- Start of html part 1/2 to add. Change to your relative location -->
 <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -15,39 +14,41 @@
 </head>
 <body>
   <!-- Start of html part 2/2 to add: change img src -->
-  <!--img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:0%">
+  <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:0%;position:absolute;">
   <div class="alice_popup" id="alice_popup">
   <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
   <div id="alice_question_in_html"></div>
   <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
   </div>
-  < End of html part 2/2 to add -->
+  <!-- End of html part 2/2 to add -->
+<div id="rotate">
   <div id="title" >
-    <h1>Questions about little mermaid 🧜🏻‍♀️ Click on the correct answer 🧜🏻‍♀️</h1></div>
-    <div id ="Q1">
-        <h1>Who is the villain in the Little Mermaid books and movies?</h1>
+    <h1>Questions about little mermaid 🧜🏻‍♀️ Click on the correct answer 🧜🏻‍♀️</h1>
+  </div>
+  <div id ="Q1">
+      <h1>Who is the villain in the Little Mermaid books and movies?</h1>
+  </div> 
+  <div id="correctAnswer1" onclick="correct(1)">
+      <h3>Ursula</h3>
+  </div>
+  <div id="wrongAnswer1" onclick="wrongAnswer()">
+    <h3>Daria</h3>
+    <h3>Ariel</h3>
+  </div>
+  <div id="q2">
+    <div id ="Q2">
+      <h1 class ="q2">What is the name Ursula pretended to be?</h1>
     </div> 
-    <div id="correctAnswer" onclick="correct()">
-        <h3>Ursula</h3>
-      </div>
-      <div id="wrongAnswer" onclick="wrongAnswer()">
-        <h3>Daria</h3>
-        <h3>Ariel</h3>
-      </div>
-      <div id="q2">
-        <div id ="Q2">
-          <h1 class ="q2">What is the name Ursula pretended to be?</h1>
-        </div> 
-       <div id="wrongAnswer" onclick="wrongAnswer()">
-        <h3 class ="q2">Ursula</h3>
-        <h3 class ="q2">Ariel</h3>
-      </div>
-      <div id="correctAnswer2" onclick="correct1()">
-        <h3 class ="q2">Vanessa</h3>
-      </div>
-
+    <div id="wrongAnswer2" onclick="wrongAnswer()">
+      <h3 class ="q2">Ursula</h3>
+      <h3 class ="q2">Ariel</h3>
     </div>
-      
+    <div id="correctAnswer2" onclick="correct()">
+      <h3 class ="q2">Vanessa</h3>
+    </div>
+  </div>
+  <img onclick="theNextRoom()" id="doorImg" src="images/CA.jpg">
+</div>
 </body>
 
 </html>
