@@ -8,31 +8,34 @@
     <title>Escape Room!</title>
     <script>
 
-        // Start of add this. Change to your relative location and correct room number (1-6)
-        localStorage.setItem("roomNumber",1);
+        // ~ Start of js part 1/2 to add. Change:
+        // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
+        // 2. fairyTaleroomNumber = correct room number (1-6):
+        //   1: Little red riding hood, 2: Cinderella, 3: Hansel and Gretel, 4: The little mermaid
+        //   5: Zehava and the three bears, 6: The school for good and evil
+        let fairyTaleroomNumber = 4;
 
-        // I had to choose a diff name because of second script
-        let fairyTaleroomNumber = 1;
+        localStorage.setItem("roomNumber",fairyTaleroomNumber);
         localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../");
-        // End of add this 
+        // ~ End of js part 1/2 to add
 
         var hasKey = false;
 
         function tryKnob(){ 
             if(hasKey){
                 alert("You opened the lock!");
-                // add THIS
+                // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
                 if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
                     alert("You need to answer alice's question before you can leave!");
                 }
                 else{
-                    // escape the room!
+                    // escape the room! = your code of moving to next page
                     document.getElementById("escapeBtn").style.visibility = "visible";
 
                     //just for testing
                     localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
                 }
-                // end of add THIS
+                // ~ End of js part 2/2 to add
             }
             else{
                 alert("Sorry, it's locked. Can you find the key?");
@@ -46,7 +49,7 @@
         }
     </script>
 
-    <!-- Start of html part 1/2 to add. Change to your relative location -->
+    <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
     <link rel="stylesheet" href="../alicecode_questions.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="../alicecode_questions.js"></script>
@@ -56,7 +59,9 @@
 <body>
     <div id="room">
 
-        <!-- Start of html part 2/2 to add: change img src -->
+        <!-- Start of html part 2/2 to add:
+            * change alice_img *src* to match your relative location
+            * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
         <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_girl_bw.webp" style="left:0%;top:0%;position:absolute;">
         <div class="alice_popup" id="alice_popup">
         <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
