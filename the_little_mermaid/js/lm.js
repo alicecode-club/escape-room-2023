@@ -2,9 +2,16 @@
 let fairyTaleroomNumber = 4; // I had to choose a diff name because of second script
 localStorage.setItem("roomNumber",fairyTaleroomNumber);
 localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
+var q1answered= false;
+var q2answered= false;
 // ~ End of add this 
 function correct() {
-    alert("Correct!");}
+    alert("Correct!");
+    q1answered=true;
+    document.getElementById("correctAnswer").style.backgroundColor="green";
+    
+}
+
 function correct1(){
     alert("Correct!");
      // ~ add THIS
@@ -13,8 +20,7 @@ function correct1(){
     }
     else{
         // escape the room!
-        window.location.assign("../../three_bears/zehava.html")
-
+        caveAppear()
         //just for testing
         localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
     }
@@ -22,15 +28,16 @@ function correct1(){
   }
 function wrongAnswer(){
     alert("wrong Answer")
-}  
+} 
 function caveAppear(){
-        var x = document.getElementById("cave");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-
-      
+    var x = document.getElementById("doorImg");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+function theNextRoom(){
+    window.location.assign("../../three_bears/zehava.html")
 
 }
