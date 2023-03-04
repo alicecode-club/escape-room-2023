@@ -48,6 +48,7 @@
     font-variant: normal; 
     font-weight: 400; 
     line-height: 25px;
+    overflow: visible;
  }
 
 .alice_popup #submit_btn {
