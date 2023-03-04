@@ -15,23 +15,32 @@ h3,h1{
   color: rgb(9, 19, 57);
   text-align: center;
 }
-div{
+#rotate{
   transform: rotate(-1deg);
  
 }
 h3:hover {
   cursor: pointer;
   background-color: rgb(255, 0, 187);
+  color: rgb(9, 19, 57);
 }
 .q2{
   color:grey;
 }
-.doorImg{
-  top:10%;
-  right: 10%;
-  height: 10%;
-  width: 10%;
+#doorImg{
+  height: 30%;
+  width: 30%;
+  left: 68%;
+  top: 66%;
+  position:absolute;
+  border-radius: 90px;
+  visibility: hidden;  
 }
-.q1div h3{
+.correctAnswer{
+  background-color: rgb(0, 255, 76);
+  pointer-events: none;
+}
+.wrongAnswer{
+  background-color: rgb(255, 68, 0);
   pointer-events: none;
 }
