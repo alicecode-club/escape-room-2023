@@ -17,10 +17,11 @@ body{
 
 #grandmother {
     position: fixed;
-    width: 7%;
-    height: 21.5%;
-    top: 7%;
-    left: 6%;
+    width: 11%;
+    height: 20%;
+    top: 5.5%;
+    left: 3%;
+    transform: rotate(-36deg);
 }
 
 
