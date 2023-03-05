@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example_room.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>External Escape Room!</title>
+    <script>
+
+        // ~ Start of js part 1/2 to add. Change:
+        // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
+        // 2. fairyTaleroomNumber = correct room number (1-6):
+        //   1: Little red riding hood, 2: Cinderella, 3: Hansel and Gretel, 4: The little mermaid
+        //   5: Zehava and the three bears, 6: The school for good and evil
+        let fairyTaleroomNumber = 4;
+
+        localStorage.setItem("roomNumber",fairyTaleroomNumber);
+        localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
+        // ~ End of js part 1/2 to add 
+
+        var hasKey = false;
+
+        function tryKnob(){ 
+            if(hasKey){
+                alert("You opened the lock!");
+                // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
+                if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
+                    alert("You need to answer alice's question before you can leave!");
+                }
+                else{
+                    // escape the room! = your code of moving to next page
+                    document.getElementById("escapeBtn").style.visibility = "visible";
+
+                    //just for testing
+                    localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
+                }
+                // ~ End of js part 2/2 to add
+            }
+            else{
+                alert("Sorry, it's locked. Can you find the key?");
+            }
+        }
+
+        function pickUpKey(){
+            hasKey = true;
+            alert("You pick up the key and put it in your pocket");
+            document.getElementById("key").style.visibility = "hidden";
+        }
+    </script>
+
+    <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
+    <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../alicecode_questions/alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
+
+</head>
+<body>
+    <div id="room">
+
+        <!-- Start of html part 2/2 to add: 
+            * change alice_img *src* to match your relative location
+            * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
+        <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:0%;position:absolute;">
+        <div class="alice_popup" id="alice_popup">
+        <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+        <div id="alice_question_in_html"></div>
+        <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+        </div>
+        <!-- End of html part 2/2 to add -->
+
+       <img id="door" src="EscapeRoom_door.png">
+       <img id="knob" onclick="tryKnob()" src="EscapeRoom_knob.png">
+       <img id="key" onclick="pickUpKey()" src="EscapeRoom_key.png">
+       <button id="escapeBtn">Get Out of Here!</button>
+    </div>
+</body>
+</html>
