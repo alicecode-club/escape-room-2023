@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/basket.jpeg");
+    background-image: url("../images/bg-blank-new.jpeg");
     background-size: cover;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -9,18 +9,28 @@ body{
 
 #wolf {
     position: fixed;
-    width: 9.5%;
-    height: 13%;
-    top: 2%;
-    right: 35%;
+    width: 10%;
+    height: 11%;
+    top: 4.9%;
+    right: 39%;
+    transform: rotate(16.5deg);
+}
+
+#wolf_tail {
+    position: fixed;
+    width: 3%;
+    height: 10%;
+    top: 3.5%;
+    right: 53%;
+    transform: rotate(-24deg);
 }
 
 #grandmother {
     position: fixed;
-    width: 11%;
-    height: 20%;
-    top: 5.5%;
-    left: 3%;
+    width: 10%;
+    height: 18%;
+    top: 5.2%;
+    left: 2.8%;
     transform: rotate(-36deg);
 }
 
@@ -31,27 +41,28 @@ body{
     font-size: 215%;
     text-align: center;
     color: rgb(0, 0, 0);
+    top: 30%;
     left: 23%;
-    top: 35%;
     background-color: rgba(255, 255, 255, 0.724);
 }
 
 
 #cape {
     position: fixed;
-    width: 8%;
-    height: 16%;
-    top: 45%;
-    right: 12%;
+    width: 7%;
+    height: 14%;
+    top: 43.5%;
+    right: 10%;
+    transform: rotate(38.3deg);
 }
 
 #book {
     position: fixed;
-    width: 10%;
-    height: 15%;
-    top: 55.3%;
+    width: 8.5%;
+    height: 11%;
+    top: 51.6%;
     right: 45.3%;
-    transform: rotate(-45deg);
+    transform: rotate(-37deg);
 }
 
 
