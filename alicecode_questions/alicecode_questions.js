@@ -18,8 +18,6 @@ console.log("question answered is: " + localStorage.getItem(`alice_question${roo
 })(jQuery);
 
 const aliceQuestionsJson = '[' +
-    '{"question":["Are we going to finish the game on time?","No","Yes we are!"],"multi_flag": true,"answer_number":2},' +
-    '{"question":"Which date in March is our event?","answer":"14"},' +
     '{"question":[' + 
         '"Which woman won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation?",' +
         '"Marie Curie",' +
