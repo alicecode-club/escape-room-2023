@@ -18,8 +18,6 @@ console.log("question answered is: " + localStorage.getItem(`alice_question${roo
 })(jQuery);
 
 const aliceQuestionsJson = '[' +
-    '{"question":["Are we going to finish the game on time?","No","Yes we are!"],"multi_flag": true,"answer_number":2},' +
-    '{"question":"Which date in March is our event?","answer":"14"},' +
     '{"question":[' + 
         '"Which woman won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation?",' +
         '"Marie Curie",' +
@@ -68,7 +66,7 @@ function aliceQuestion(){
 }
 
 function setMultiChoiceQuestionInHtml(question){
-    let questionInHtml = `<h1 id="alice_h1">Alice's Question:</h1>`
+    let questionInHtml = `<h2 id="alice_h1">Alice's Question:</h2>`
     questionInHtml += `<p id="alice_p">${question[0]}</p>`
     for (let i=1; i<question.length;i++){
 
@@ -80,7 +78,8 @@ function setMultiChoiceQuestionInHtml(question){
 
 // I have a bug here, this doesn't look good
 function setInputQuestionInHtml(question){
-    let questionInHtml = `<p>${question}</p><br>` +
+    let questionInHtml = `<h2 id="alice_h1">Alice's Question:</h2>`
+    questionInHtml += `<p>${question}</p><br>` +
     '<label for="fname">Your answer:</label><br>'+
     '<input type="text" id="alice_input_answer" name="alice_input_answer"><br><br>'
     document.getElementById("alice_question_in_html").innerHTML = questionInHtml
@@ -108,7 +107,7 @@ function checkAliceMultiChoiceAnswer(index){
 }
 
 function checkAliceInputAnswer(index){
-    if(document.getElementById('alice_input_answer').value.toLowerCase() === aliceQuestions[index].answer){
+    if(document.getElementById('alice_input_answer').value.toLowerCase() === aliceQuestions[index].answer.toLowerCase()){
         correctAnswerActions();
     }
     else{
