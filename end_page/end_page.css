@@ -8,32 +8,51 @@
 } 
 body{
     background-image: url("backgroundendpage.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-    height: 43%; ;
-    width: 68%; ;
-    top: 40%;
-    left: 40%;
     
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
   }
-  .griditem {
+  .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    height:150px ;
+    width: 70%;
+    height: 37%;
+    margin: auto;
   }
   .gridImg {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    height:150px ;
+    border: 1px solid rgba(0, 0, 0, 0.8);  
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
+  #centerGrid{
+
+    display: flex;
+    justify-content: center;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+  }
+  #leftSide{
+    width: 31%;
+    height: 75%;
+    position: absolute;
+    left:34%;
+    top:15%;
+    
+    transform: rotate(-2deg);
+}
