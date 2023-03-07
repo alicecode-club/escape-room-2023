@@ -11,6 +11,28 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
+    
+}
+.endText{
+  font-family: 'Tilt Neon', cursive;
+  position: fixed;
+  font-size: 215%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  top: 0%;
+  left: 35%;
+  background-color: rgba(255, 255, 255, 0.724);
+}
+.gif{
+  position: absolute;
+
+  width: 20%;
+  height: 30%;
+}
+#transform{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
   .grid-container {
