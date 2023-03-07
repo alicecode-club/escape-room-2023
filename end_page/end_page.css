@@ -16,7 +16,7 @@ body{
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+    
     position: absolute;
     height: 100%;
     width: 100%;
@@ -37,7 +37,7 @@ body{
     height: 100%;
   }
   #centerGrid{
-    background-color: pink;
+
     display: flex;
     justify-content: center;
     height:100%;
@@ -53,6 +53,6 @@ body{
     position: absolute;
     left:34%;
     top:15%;
-    background-color: blueviolet;
+    
     transform: rotate(-2deg);
 }
