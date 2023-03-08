@@ -1,0 +1,7 @@
+body{
+    background: url(house.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 200%;
+
+}

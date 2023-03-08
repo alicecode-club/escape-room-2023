@@ -1,14 +1,21 @@
 body{
     background: url(house.jpg) no-repeat center center fixed; 
     background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 200%;
 
 }
-h1{
-    text-align: center;
+.titles{
+  left: 41%;
   background-color: green;
+  position: fixed;
     
-    font-family: 'Fascinate Inline', cursive;
+    
   }
-h2{
+.pictures{
+  position: absolute;
+  top:25%;
+  
+  left: 30%;
 
 } 
