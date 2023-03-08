@@ -7,15 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
-    
+    <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
+    <link rel="stylesheet" href="../../alicecode_questions/alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../alicecode_questions/alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
 </head>
 
 <body>
+    <!-- Start of html part 2/2 to add: 
+    * change alice_img *src* to match your relative location
+    * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
+    <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:0%;position:absolute;">
+    <div class="alice_popup" id="alice_popup">
+    <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+    <div id="alice_question_in_html"></div>
+    <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+    </div>
+    <!-- End of html part 2/2 to add -->
     <h1 class="titles">Picture Quiz</h1>
     <div class="pictures">
-        <a href="question1.html" class="q1"><img src="https://picsum.photos/id/423/200/300"></a>
-        <a href="question2.html"class="q2"><img src="https://picsum.photos/seed/picsum/200/300"></a>
-        <a href="question3.html"class="q3"><img src="https://picsum.photos/id/28/200/300"></a>
+        <a href="question1.html" class="q1"><img id="q1img" src="https://picsum.photos/id/423/200/300"></a>
+        <a href="question2.html"class="q2"><img id="q2img" src="https://picsum.photos/seed/picsum/200/300"></a>
+        <a href="question3.html"class="q3"><img id="q3img" src="https://picsum.photos/id/28/200/300"></a>
     </div>
   <img   id="door1" onclick="nextroom()" src="../image/door.webp">
 </body>

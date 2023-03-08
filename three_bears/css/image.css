@@ -29,11 +29,15 @@ body{
   background-color: wheat;
 }
 #door1{
-  /*visibility: hidden; */
-  visibility: visible;
+
+  visibility: hidden;
   position: absolute;
   left:60%;
   bottom:0%;
   width: 30%;
   height: 30%;
+}
+
+#q1img{
+  border: 2px solid green;
 }
