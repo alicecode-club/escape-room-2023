@@ -44,3 +44,11 @@ if (localStorage.getItem("answer1") && localStorage.getItem("answer2") && localS
     alert("Congratulations! You answered all the questions correctly and won!");
     localStorage.clear()
 }
+function doorAppear(){
+    document.getElementById("door").style.visibility="visible";
+  }
+function nextroom(){
+    window.location.assign("../../the_school_for_good_and_evil/forest1.html")
+
+
+}
