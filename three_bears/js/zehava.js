@@ -8,64 +8,37 @@ let fairyTaleroomNumber = 5;
 localStorage.setItem("roomNumber",fairyTaleroomNumber);
 localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../../alicecode_questions/");
 // ~ End of js part 1/2 to add 
-
-// Question 1
-var answer1 = "mother father and son";
-
-function checkAnswer1() {
-    var userAnswer = document.getElementById("answer1").value;
-    if (userAnswer === answer1) {
-        localStorage.setItem("answer1", true);
-        document.getElementById("q1img").style.border=" 10px solid black;"
-        alert("Correct! You answered " + userAnswer);
-        window.location.href = "index.html";
-    } else {
-        alert("Incorrect! Please try again.");
-    }
+function add_green_border(){
+    // to give time for elements to load  
+    setTimeout(function() { 
+        if(localStorage.getItem("answer1")){
+            document.getElementById("q1img").style.border="4px solid green";
+        }
+        if(localStorage.getItem("answer2")){
+            document.getElementById("q2img").style.border="4px solid green";
+        }
+        if(localStorage.getItem("answer3")){
+            document.getElementById("q3img").style.border="4px solid green";
+        }
+    }, 500);
 }
-
-// Question 2
-var answer2 = "Porridge";
-
-function checkAnswer2() {
-    var userAnswer = document.getElementById("answer2").value;
-    if (userAnswer === answer2) {
-        localStorage.setItem("answer2", true);
-        alert("Correct! You answered " + userAnswer);
-        window.location.href = "index.html";
-    } else {
-        alert("Incorrect! Please try again.");
-    }
-}
-
-// Question 3
-var answer3 = "In the son's bed";
-
-function checkAnswer3() {
-    var userAnswer = document.getElementById("answer3").value;
-    if (userAnswer === answer3) {
-        localStorage.setItem("answer3", true);
-        alert("Correct! You answered " + userAnswer);
-        window.location.href = "zehava.html";
-    } else {
-        alert("Incorrect! Please try again.");
-    }
-}
-
-if (localStorage.getItem("answer1") && localStorage.getItem("answer2") && localStorage.getItem("answer3")) {
+function check_all_answered(){
+    if (localStorage.getItem("answer1") && localStorage.getItem("answer2") && localStorage.getItem("answer3")) {
    
-    // to give time for lines 17-18 to execute  
-    setTimeout(function() {
-    
-        // escape the room!
-        alert("Congratulations! You answered all the questions correctly and won!");
-        doorAppear();
-        }, 500);
-    localStorage.clear()
+        // to give time to load  
+        setTimeout(function() {
+        
+            // escape the room!
+            alert("Congratulations! You answered all the questions correctly!");
+            doorAppear();
+            }, 1000);
+    }
 }
+
 function doorAppear(){
     document.getElementById("door1").style.visibility="visible";
 }
+
 function nextroom(){
     // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
     if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
@@ -77,8 +50,13 @@ function nextroom(){
 
         //just for testing
         localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
+        
+        localStorage.removeItem("answer1");
+        localStorage.removeItem("answer2");
+        localStorage.removeItem("answer3");
     }
     // ~ End of js part 2/2 to add
-
-
 }
+
+add_green_border()
+check_all_answered()

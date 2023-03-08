@@ -1,12 +1,18 @@
 body{
-    background: url(https://cdn1.vectorstock.com/i/1000x1000/29/80/goldilocks-and-3-bear-house-19-vector-34302980.jpg) no-repeat center center fixed; 
-    background-size: cover;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 200%;
+    background-color: #fee54b;
 
 }
+#bg-house{
+  z-index: -1;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  position: absolute;
+}
 .titles{
-  left: 41%;
+  left: 10%;
   background-color: green;
   position: fixed;
     
@@ -16,7 +22,7 @@ body{
   position: absolute;
   top:25%;
   
-  left: 34%;
+  left: 10%;
   
 } 
 .q1:hover {
@@ -36,8 +42,4 @@ body{
   bottom:0%;
   width: 30%;
   height: 30%;
-}
-
-#q1img{
-  border: 2px solid green;
 }
