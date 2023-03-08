@@ -1,5 +1,5 @@
 body{
-    background: url(house.jpg) no-repeat center center fixed; 
+    background: url(https://cdn1.vectorstock.com/i/1000x1000/29/80/goldilocks-and-3-bear-house-19-vector-34302980.jpg) no-repeat center center fixed; 
     background-size: cover;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 200%;
@@ -16,6 +16,15 @@ body{
   position: absolute;
   top:25%;
   
-  left: 30%;
-
+  left: 34%;
+  
 } 
+.q1:hover {
+  background-color: wheat;
+}
+.q2:hover {
+  background-color: wheat;
+}
+.q3:hover {
+  background-color: wheat;
+}
