@@ -28,3 +28,12 @@ body{
 .q3:hover {
   background-color: wheat;
 }
+#door1{
+  /*visibility: hidden; */
+  visibility: visible;
+  position: absolute;
+  left:60%;
+  bottom:0%;
+  width: 30%;
+  height: 30%;
+}
