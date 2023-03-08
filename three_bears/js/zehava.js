@@ -41,12 +41,19 @@ function checkAnswer3() {
 }
 
 if (localStorage.getItem("answer1") && localStorage.getItem("answer2") && localStorage.getItem("answer3")) {
-    alert("Congratulations! You answered all the questions correctly and won!");
+   
+    // to give time for lines 17-18 to execute  
+    setTimeout(function() {
+    
+        // escape the room!
+        alert("Congratulations! You answered all the questions correctly and won!");
+        doorAppear();
+        }, 500);
     localStorage.clear()
 }
 function doorAppear(){
-    document.getElementById("door").style.visibility="visible";
-  }
+    document.getElementById("door1").style.visibility="visible";
+}
 function nextroom(){
     window.location.assign("../../the_school_for_good_and_evil/forest1.html")
 
