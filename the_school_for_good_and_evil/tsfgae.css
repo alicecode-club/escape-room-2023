@@ -1,13 +1,16 @@
 .map{
     background: url('https://evernever.com/wp-content/uploads/2021/09/bc6ec1-20170918-the-map-of-the-school-for-good-and-evil.jpg');     
     background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .chess {
-    height: 30px;
-    width: 50x;
-    margin-top: 0.2%;
-    margin-left: 51.5%;
+    height: 3%;
+    width: 3%;
+    top: 55.2%;
+    left: 51.5%;
+    position: fixed;
     cursor: pointer;
 }
 
@@ -106,10 +109,11 @@
 }
 
 .letter {
-    height: 30px;
-    width: 50x;
-    margin-top: 6%;
-    margin-left: 29%;
+    height: 3%;
+    width: 3%;
+    top: 41%;
+    left: 29%;
+    position: fixed;
     cursor: pointer;
 }
 
