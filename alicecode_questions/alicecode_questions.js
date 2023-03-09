@@ -39,7 +39,7 @@ const aliceQuestionsJson = '[' +
         '"Beulah Louise Henry",' +
         '"Beatrice Hicks",' +
         '"Martha Coston"],' +
-        '"multi_flag": true,"answer_number":4},' +
+        '"multi_flag": true, "answer_number":4},' +
     '{"question": "Two tribes live on the island of true and false. One tribe only speaks the truth and the other only lies. Upon your arrival to the island you meet a girl, a woman and a man. <br>The girl says: ~If two of the adults speak the truth, then I am telling lies~. <br>Which tribe is the girl from?",' +
     '"answer":"True"},' +
     '{"question":[' +
@@ -48,7 +48,7 @@ const aliceQuestionsJson = '[' +
         '"Emily Warren Roebling",' +
         '"Edith Clark",' +
         '"Hedy Lamar"],' +
-        '"multi_flag": true,"answer_number":4}' +
+        '"multi_flag": true, "answer_number":4}' +
 ']'
 const aliceQuestions = JSON.parse(aliceQuestionsJson);
 

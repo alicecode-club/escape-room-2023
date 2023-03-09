@@ -1,14 +1,45 @@
 body{
-    background: url(house.jpg) no-repeat center center fixed; 
-    background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 200%;
+    background-color: #fee54b;
 
 }
-h1{
-    text-align: center;
+#bg-house{
+  z-index: -1;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  position: absolute;
+}
+.titles{
+  left: 10%;
   background-color: green;
+  position: fixed;
     
-    font-family: 'Fascinate Inline', cursive;
+    
   }
-h2{
-
+.pictures{
+  position: absolute;
+  top:25%;
+  
+  left: 10%;
+  
 } 
+.q1:hover {
+  background-color: wheat;
+}
+.q2:hover {
+  background-color: wheat;
+}
+.q3:hover {
+  background-color: wheat;
+}
+#door1{
+
+  visibility: hidden;
+  position: absolute;
+  left:60%;
+  bottom:0%;
+  width: 30%;
+  height: 30%;
+}
