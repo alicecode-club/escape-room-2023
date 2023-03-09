@@ -31,6 +31,7 @@ function items_counter(id) {
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
+        document.getElementById(id).style.display = "none";
     }
 
     if((counter == 2) && (items_list[item] == 0)) {
@@ -38,6 +39,7 @@ function items_counter(id) {
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
+        document.getElementById(id).style.display = "none";
     }
 
     if((counter == 3) && (items_list[item] == 0)) {
@@ -45,6 +47,7 @@ function items_counter(id) {
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
+        document.getElementById(id).style.display = "none";
     }
 
     if((counter == 4) && (items_list[item] == 0)) {
@@ -52,6 +55,7 @@ function items_counter(id) {
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
+        document.getElementById(id).style.display = "none";
         window.location.replace("../html/last_page.html");
     }
 
