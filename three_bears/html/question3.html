@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Question 3</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../css/question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>Question 3</h1>
+    <p>What bed did Little fall asleep in?</p>
+    <form onsubmit="checkAnswer3(); return false;">
+      <input type="radio" id="answer3a" name="answer3" value="a">
+      <label for="answer3a">A. In father's bed</label><br>
+      <input type="radio" id="answer3b" name="answer3" value="b">
+      <label for="answer3b">B. In mother's bed</label><br>
+      <input type="radio" id="answer3c" name="answer3" value="c">
+      <label for="answer3c">C. In the son's bed</label><br>
+      <button type="submit"id="button">Submit</button>
+    </form>
+    <script>
+function checkAnswer3() {
+  var userAnswer = document.querySelector('input[name="answer3"]:checked').value;
+
+  if (userAnswer === "c") {
+    localStorage.setItem("answer3", "In the son's bed");
+    alert("Correct! Your answer has been saved.");
+
+    window.location.href = "zehava.html";
+  } else {
+    alert("Incorrect. Please try again.");
+  }
+}
+    </script>
+  </body>
+</html>

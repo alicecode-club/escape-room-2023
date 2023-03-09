@@ -1,20 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100%;
-}
+
 body{        
     background-image: url("../images/bg.JPG");
     background-repeat: no-repeat;
-    background-size: 100% 690px;
+    background-size:100% 100%;
+    background-attachment: fixed;
 }
 .box2{
-    position: relative;
-    bottom:60%;
+    position: absolute;
+    bottom:0%;
     left: -2%;
-    height: 460px;
-    width: 420px;
+    height: 56%;
+    width: 26%;
     background-color: transparent;
 
 }

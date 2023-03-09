@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Question 2</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../css/question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>Question 2</h1>
+    <p>What did they eat in the story?</p>
+    <form onsubmit="checkAnswer2(); return false;">
+      <input type="radio" id="answer2a" name="answer2" value="a">
+      <label for="answer2a">A. Porridge</label><br>
+      <input type="radio" id="answer2b" name="answer2" value="b">
+      <label for="answer2b">B. Soup</label><br>
+      <input type="radio" id="answer2c" name="answer2" value="c">
+      <label for="answer2c">C. candies</label><br>
+      <button type="submit" id="button">Submit</button>
+    </form>
+    <script>
+function checkAnswer2() {
+  var userAnswer = document.querySelector('input[name="answer2"]:checked').value;
+
+  if (userAnswer === "a") {
+    localStorage.setItem("answer2", "Porridge");
+    alert("Correct! Your answer has been saved.");
+
+    window.location.href = "zehava.html";
+  } else {
+    alert("Incorrect. Please try again.");
+  }
+}
+    </script>
+  </body>
+</html>
