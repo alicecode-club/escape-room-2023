@@ -5,13 +5,25 @@
     position: absolute;
     width: 100%;
     height: 98%;
+    
  
 }
 
+body{
+    background-image: url("../images/library.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /*background-position: center;*/
+    background-attachment: fixed;
+    
+    
+}
+
 #ExplainingDiv{
-    margin-top: 350px;
-    position: absolute;
-    top: 8px;
+    /*position: absolute;*/
+    top: 45%;
     left: 16px;
     z-index: 3;
     font-family: 'Lobster', cursive;
@@ -21,16 +33,18 @@
     text-align: center;
     width: 320px;
     height: 90px;
+    position: fixed;
 }
 
 
 #libraryTheImageBackground{
-    width: 100%;
-    height: 100%;
-    background-repeat: none;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+   
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /*background-position: center;*/
+    background-attachment: fixed;
+    
 }
 
 #libraryDivBackgroundImage{
@@ -43,17 +57,18 @@
 
 #PickTheBasket{
     background-color: rgba(255, 255, 255, 0);
-    width: 80px;
-    height: 30px;
-    position: relative;
-    margin-top: 540px;
+    width: 8.5%;
+    height: 5.5%;
+    position: fixed;
+    top: 56.5%;
     z-index: 2;
-    margin-right: 420px;
+    right: 45%;
 }
 
 #TheActuallyLibrary{
     z-index: 1;
-    position: absolute;
+    position: fixed;
     height: 100%;
+    width: auto;
 }
 
