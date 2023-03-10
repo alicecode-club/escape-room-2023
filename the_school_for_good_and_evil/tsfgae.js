@@ -160,3 +160,14 @@ function checkDigits() {
      function direction4() {
         window.location.replace("forest1.html");
     }
+
+    // ~ Start of js part 1/2 to add. Change:
+        // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
+        // 2. fairyTaleroomNumber = correct room number (1-6):
+        //   1: Little red riding hood, 2: Cinderella, 3: Hansel and Gretel, 4: The little mermaid
+        //   5: Zehava and the three bears, 6: The school for good and evil
+        let fairyTaleroomNumber = 6;
+
+        localStorage.setItem("roomNumber",fairyTaleroomNumber);
+        localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
+        // ~ End of js part 1/2 to add 
