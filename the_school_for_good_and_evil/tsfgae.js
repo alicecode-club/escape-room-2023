@@ -162,7 +162,14 @@ function checkDigits() {
     }
 
     function revilHint() {
-        alert("Hi");
+        const myDiv = document.getElementById('penHint');
+        if (myDiv.classList.contains('hide')) {
+            myDiv.className= "show";
+            myDiv.className= "penHintWords";
+          }
+        else if (myDiv.classList.contains('show')) {
+            myDiv.className= "hide";
+        }
     }
 
     function moveToEnd() {

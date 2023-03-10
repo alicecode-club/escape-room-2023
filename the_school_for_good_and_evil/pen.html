@@ -77,6 +77,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Solitreo&display=swap" rel="stylesheet">
    
   </head>
   <link rel="stylesheet" href="tsfgae.css">
@@ -85,6 +89,7 @@
 
 
   <body class="penContainer">
+    <div>
     <div class="centered codeEnterPage">
       <div class="codeEnterPageInside">
         <div>
@@ -95,7 +100,7 @@
         <p class="penInstruction2">Once you have found the three digits, you can open the box that contains the legend of Sophie and Agatha!</p>
 
         <div id="penDigitsContainer" class="digitsContainer">
-          <div>
+          <div> 
             <input id="num1" class="inputT" min="0" type="number" placeholder="0">
           </div>
           <div>
@@ -105,9 +110,13 @@
             <input class="inputT" id="num3" min="0" type="number" placeholder="0">
           </div>
         </div>
-
+        <div class="penHintWords hide" id="penHint">
+        The letter came in second sight.
+          Next, the forest was found with glee,
+          And that's the order you'll agree.
+        </div>
         <div>
-          <input onclick="checkDigits()" id="checkDigitsButton" class="penButtonHint" type="button" value="Hint">
+          <input onclick="revilHint()" id="checkDigitsButton" class="penButtonHint" type="button" value="Hint">
         </div>
 
         <div>
@@ -115,12 +124,11 @@
         </div>
 
         <div id="penDivChess" class="hide">
-          <a href="../end_page/end_page.html">
-            <img id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
+            <img onclick="moveToEnd()" id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
           </a>
           <div id="penIncorrectLine"></div>
         </div>
-        
+        </div>
       </div>
     </div>
   </body>
