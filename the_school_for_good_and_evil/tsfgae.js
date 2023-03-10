@@ -160,3 +160,11 @@ function checkDigits() {
      function direction4() {
         window.location.replace("forest1.html");
     }
+
+    function revilHint() {
+        alert("Hi");
+    }
+
+    function moveToEnd() {
+        window.location.href = '../end_page/end_page.html'
+    }  
