@@ -173,8 +173,15 @@ function checkDigits() {
         // ~ End of js part 1/2 to add 
     
         function revilHint() {
-        alert("Hi");
-    }
+            const myDiv = document.getElementById('penHint');
+            if (myDiv.classList.contains('hide')) {
+                myDiv.className= "show";
+                myDiv.className= "penHintWords";
+              }
+            else if (myDiv.classList.contains('show')) {
+                myDiv.className= "hide";
+            }
+        }
 
     function moveToEnd() {
         // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
