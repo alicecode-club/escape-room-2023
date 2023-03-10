@@ -193,14 +193,13 @@ function checkDigits() {
         // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
         if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
             alert("You need to answer alice's question before you can leave!");
+            return;
         }
         else{
             // escape the room! = your code of moving to next page
-            window.location.href = '../end_page/end_page.html'
+            window.location.href = '../end_page/end_page.html';
 
             //just for testing
             localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
         }
-        // ~ End of js part 2/2 to add
-        window.location.href = '../end_page/end_page.html'
     }  
