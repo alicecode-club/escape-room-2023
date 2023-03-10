@@ -25,16 +25,16 @@ function checkCoverNum(coverNum) {
             showNum("4");
             break;
         case 1:
-            showNum("8");
+            showNum("A");
             break;
         case 3:
-            showNum("5");
+            showNum("P");
             break;
         case 4:
-            showNum("6");
+            showNum("K");
             break;
         case 5:
-            showNum("7");
+            showNum("L");
     }
 }
 
