@@ -161,6 +161,22 @@ function checkDigits() {
         window.location.replace("forest1.html");
     }
 
+    function revilHint() {
+        const myDiv = document.getElementById('penHint'); 
+        const val=document.getElementById("checkDigitsButton");
+        if (myDiv.classList.contains('hide')) {
+            myDiv.classList = [];
+            myDiv.classList.add("show");
+            myDiv.classList.add("penHintWords");
+            val.value="Hide Hint";
+          }
+        else if (myDiv.classList.contains('show')) {
+            myDiv.classList = [];
+            myDiv.classList.add("hide");
+            val.value="Show Hint";
+        }
+    }
+
     // ~ Start of js part 1/2 to add. Change:
         // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
         // 2. fairyTaleroomNumber = correct room number (1-6):
@@ -172,16 +188,6 @@ function checkDigits() {
         localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
         // ~ End of js part 1/2 to add 
     
-        function revilHint() {
-            const myDiv = document.getElementById('penHint');
-            if (myDiv.classList.contains('hide')) {
-                myDiv.className= "show";
-                myDiv.className= "penHintWords";
-              }
-            else if (myDiv.classList.contains('show')) {
-                myDiv.className= "hide";
-            }
-        }
 
     function moveToEnd() {
         // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page

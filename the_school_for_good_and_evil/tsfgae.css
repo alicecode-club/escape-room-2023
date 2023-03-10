@@ -513,7 +513,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-}  co
+} 
 
 .codeEnterPageInside {
   width: 50%;
@@ -613,6 +613,7 @@
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .penButtonHint:not(:focus-visible):not(.focus-visible) {
