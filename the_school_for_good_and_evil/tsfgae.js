@@ -171,3 +171,11 @@ function checkDigits() {
         localStorage.setItem("roomNumber",fairyTaleroomNumber);
         localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../alicecode_questions/");
         // ~ End of js part 1/2 to add 
+    
+        function revilHint() {
+        alert("Hi");
+    }
+
+    function moveToEnd() {
+        window.location.href = '../end_page/end_page.html'
+    }  
