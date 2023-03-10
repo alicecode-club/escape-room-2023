@@ -1,85 +1,105 @@
 .fs{
     background: url('https://i.pinimg.com/1200x/29/98/2b/29982bb0fe1c03d95c11d0144be79938.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     font-family: 'Mynerve', cursive;
 }
 
 .f1{
     background: url('https://i.pinimg.com/1200x/29/98/2b/29982bb0fe1c03d95c11d0144be79938.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .f2{
     background: url('https://i.ytimg.com/vi/6GMtm3nFyzM/maxresdefault.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
-
+    background-attachment: fixed;
+    background-size: 100% 100%;
     
 }
 
 .f3{
     background: url('https://rare-gallery.com/thumbs/4591513-digital-art-drawing-painting-landscape-nature-forest-trees-deviantart-fantasy-art.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .f4{
     background: url('https://i.pinimg.com/originals/71/8b/1b/718b1b205e0da6a1ca4a9027f9afccea.png');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 
 }
 
 .Note{
     background: url('https://i.pinimg.com/736x/79/1a/42/791a4230efcc5bc5f33293c1d5e96d51.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     
 }
 
 
 .direction {
-    margin-left: 90%;
-    margin-top: 15%;
-    width: 50px;
-    height: 50px;
+    width: 4%;
+    height: 7%;
+    top: 40%;
+    left: 90%;
     cursor: pointer;
     border-radius: 50%;
     font-size: 40px;
+    position: fixed;
+
+}
+
+.direction2 {
+    width: 4%;
+    height: 7%;
+    top: 40%;
+    left: 10%;
+    border-radius: 50%;
+    font-size: 40px;
+    position: fixed;
+    cursor: pointer;
+    transform: scaleX(-1);
+    transform: scaleX(-1);
+
 }
 
 .backToMain {
-    margin-top: 15%;
-    width: 50px;
-    height: 50px;
+    top: 85%;
+    left: 85%;
+    width: 5%;
+    height: 8%;
     cursor: pointer;
     border-radius: 50%;
+    position: fixed;
+    transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 #note {
-    width: 1.7%;
-    height: 0.5%;
-    margin-left: 72%;
-    margin-top: 20%;
-}
-
-#eNote{
-    margin-left: 25%;
+    width: 2.2%;
+    height: 2%;
+    left: 73%;
+    top: 87%;
+    position: fixed;
 
 }
+
+
 
 #eNote2{
     text-align: center;
     color: white;
     flex-direction: center;
+    width: 95%;
+    position: fixed;
 }
 
 .noteForest {
@@ -91,5 +111,9 @@
 
 .noteText {
     font-family: 'Shantell Sans', cursive;
-    font-size: 30px;
+    font-size: 135%;
+    left: 9%;
+    top: 3%;
+    position: fixed;
+
 }
