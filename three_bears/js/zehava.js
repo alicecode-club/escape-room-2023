@@ -46,7 +46,7 @@ function nextroom(){
     }
     else{
         // escape the room! = your code of moving to next page
-        window.location.assign("../../the_school_for_good_and_evil/openingScreenIndex")
+        window.location.assign("../../the_school_for_good_and_evil/openingScreenIndex.html")
 
         //just for testing
         localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
