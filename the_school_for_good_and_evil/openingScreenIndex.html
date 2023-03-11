@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="tsfgae2.css">
     <title>Document</title>
     <script src="tsfgae.js"></script>
+
+    <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
+    <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../alicecode_questions/alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
 </head>
 <body class = "os">
     
+    <!-- Start of html part 2/2 to add: 
+            * change alice_img *src* to match your relative location
+            * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
+            <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:70%;position:absolute;">
+            <div class="alice_popup" id="alice_popup">
+            <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+            <div id="alice_question_in_html"></div>
+            <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+            </div>
+            <!-- End of html part 2/2 to add -->
+
     <div id = "text"> 
         <h1>Greetings, bold warriors, to your last task
         At the School of Good and Evil, where heroes are made

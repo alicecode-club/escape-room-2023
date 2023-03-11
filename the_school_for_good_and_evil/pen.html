@@ -1,82 +1,43 @@
-<!--<html>
-
-<head>
-
-    <script src="tsfgae.js"></script>
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Oswald:wght@600&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Tilt+Warp&display=swap" rel="stylesheet">
-
-
-</head>
-
-
-<body class="penContanior">
-<link rel="stylesheet" href="tsfgae.css">
-<link rel="stylesheet" href="code.css">
-
-<div class="centered codeEnterecpage">
-    <div class="codeEnterecpageInside">
-        <div>
-            <a href="tsfgae.html">
-                <img id="backToMain" class="backToMain" alt="back" src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/back-arrow-blue-circle_z1k9I88u_SB_PM.jpg">
-            </a>
-        </div>
-        <p class="penInstraction2">Once you have found the three digits, you can open the box that contains the legend of Sophie and Agatha!</p>
-
-    <div id="penDigetsContanior" class="digetsContanior">
-        <div>
-                  <input id="num1" class="inpuT" min="0" type="number" placeholder="0">
-        </div>
-
-        <div>
-                  <input class="inpuT" id="num2" min="0" type="number" placeholder="0">
-        </div>
-
-        <div >
-                  <input class="inpuT" id="num3" min="0" type="number" placeholder="0">
-        </div>
-    </div>
-
-    <div>
-        <input onclick="checkDigetss()" id="checkDigetsButoon" class="penButton" type="button" value="Is It True?">
-    </div>
-
-
-        <div id="penDivChess" class="hide">
-            <a href="end.html">
-                <img id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
-            </a>
-            <div id="penInncorrectLine"></div>
-        </div>
-        
-   </div>
-</div> 
-
-
-
-
-</body>
-
-
-
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="tsfgae.css">
-    <link rel="stylesheet" href="code.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Solitreo&display=swap" rel="stylesheet">
+   
+
+    <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
+    <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../alicecode_questions/alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
+    
   </head>
+
+  <!-- Start of html part 2/2 to add: 
+            * change alice_img *src* to match your relative location
+            * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
+            <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:70%;position:absolute;">
+            <div class="alice_popup" id="alice_popup">
+            <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+            <div id="alice_question_in_html"></div>
+            <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+            </div>
+            <!-- End of html part 2/2 to add -->
+
+
+  <link rel="stylesheet" href="tsfgae.css">
+  <script src="tsfgae.js"></script>
+
+
   <body class="penContainer">
+    <div>
     <div class="centered codeEnterPage">
       <div class="codeEnterPageInside">
         <div>
@@ -87,7 +48,7 @@
         <p class="penInstruction2">Once you have found the three digits, you can open the box that contains the legend of Sophie and Agatha!</p>
 
         <div id="penDigitsContainer" class="digitsContainer">
-          <div>
+          <div> 
             <input id="num1" class="inputT" min="0" type="number" placeholder="0">
           </div>
           <div>
@@ -97,18 +58,25 @@
             <input class="inputT" id="num3" min="0" type="number" placeholder="0">
           </div>
         </div>
+        <div class="penHintWords hide" id="penHint">
+        The letter came in second sight.
+          Next, the forest was found with glee,
+          And that's the order you'll agree.
+        </div>
+        <div>
+          <input onclick="revilHint()" id="checkDigitsButton" class="penButtonHint" type="button" value="Show Hint">
+        </div>
 
         <div>
           <input onclick="checkDigits()" id="checkDigitsButton" class="penButton" type="button" value="Is It True?">
         </div>
 
         <div id="penDivChess" class="hide">
-          <a href="end.html">
-            <img id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
+            <img onclick="moveToEnd()" id="endChess" class="endBox" alt="End" src="https://i.pinimg.com/564x/3e/48/74/3e487468b3cfb3155a9927b953b5383a.jpg">
           </a>
           <div id="penIncorrectLine"></div>
         </div>
-        
+        </div>
       </div>
     </div>
   </body>

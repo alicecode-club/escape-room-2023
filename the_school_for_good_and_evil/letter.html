@@ -15,8 +15,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fjalla+One&family=Josefin+Sans:wght@700&family=Solitreo&display=swap" rel="stylesheet">
 
 
+        <!-- Start of html part 1/2 to add. Change *CSS href* and *script src* to match your relative location -->
+    <link rel="stylesheet" href="../alicecode_questions/alicecode_questions.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../alicecode_questions/alicecode_questions.js"></script>
+    <!-- End of html part 1/2 to add -->
     </head>
-
+    <!-- Start of html part 2/2 to add: 
+            * change alice_img *src* to match your relative location
+            * change alice's image LOCATION as you please: "style="left:0%;top:0%;" -->
+            <img class="alicecode_girl" id="alice_img" onclick="aliceQuestion()" src="../alicecode_questions/alicecode_girl_bw.webp" style="left:0%;top:70%;position:absolute;">
+            <div class="alice_popup" id="alice_popup">
+            <button id="alice_popup_exit" onclick="closeAlicePopup()">X</button>
+            <div id="alice_question_in_html"></div>
+            <button id="submit_btn" onclick="checkAliceAnswer()">Submit</button>
+            </div>
+            <!-- End of html part 2/2 to add -->
 
 
     <body class="sfgaeLetterPage">
@@ -29,7 +43,7 @@
             <div class="letterText">
                 <h3 class="mainLineLetter">To the king of Camelot,</h3>
                 <p class="letterFirstP">Before I can show you my message I need to make sure you are not an imposter. If you are the king, or a close friend, you should know how to answer this question: </p>
-                <p class="letterFirstP2">post Scriptum - I hope you feel gr8t</p>
+                <p class="letterFirstP2">post Scriptum - I hope you feel gr<b>8</b>t</p>
             </div>
             <input class="letterButton" type="button" value="next page" id="letterNextPageB" onclick="letterNextPage()">
         </div>
@@ -57,9 +71,9 @@
                 <div class="coverQuestionWorld" id="letterQuetionNum"></div>
                </div>
 
-               <div class="hide" id="letterTryAgainB">
+              <!-- <div class="hide" id="letterTryAgainB">
                 <input  class="moveOnLetterButton letterWorngButton" type="button" onclick="enableLetter()" value="Try Again">
-           </div>
+           </div> -->
 
                <div class="hide" id="letterQuetionButton">
                     <input class="moveOnLetterButton letterButton" type="button" value="Continue" onclick="showAllLetter()">
@@ -80,9 +94,9 @@
             <div  id="letterLetter"  class="letterLetter">
                 <div class="letterText">
                     <h3 class="mainLineLetter">Dear king, read it well</h3>
-                    <p class="letterFirstP">You found the box with all your might,
+                    <p class="letterFirstP">You found the treasure with all your might,
                         The letter came in second sight.
-                        Next, the door was found with glee,
+                        Next, the forest was found with glee,
                         And that's the order you'll agree. </p>
                 </div>
 
