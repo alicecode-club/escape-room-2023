@@ -19,9 +19,11 @@
 }
 
 #text{
-    
+    margin:20px;
     text-align: left;
     position: fixed;
     color: #ffffff;
+    background-color: rgba(0, 70, 33, 0.5);
+    padding:10px;
 }
 
