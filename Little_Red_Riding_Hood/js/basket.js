@@ -27,7 +27,7 @@ function items_counter(id) {
 
 
     if((counter == 1) && (items_list[item] == 0)) {
-        document.getElementById("items_counter").innerHTML = "Items counter: 1/4";
+        document.getElementById("items_counter").innerHTML = "<span> Items counter: 1/4 </span>";
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
@@ -35,7 +35,7 @@ function items_counter(id) {
     }
 
     if((counter == 2) && (items_list[item] == 0)) {
-        document.getElementById("items_counter").innerHTML = "Items counter: 2/4";
+        document.getElementById("items_counter").innerHTML = "<span> Items counter: 2/4 </span>";
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
@@ -43,7 +43,7 @@ function items_counter(id) {
     }
 
     if((counter == 3) && (items_list[item] == 0)) {
-        document.getElementById("items_counter").innerHTML = "Items counter: 3/4";
+        document.getElementById("items_counter").innerHTML = "<span> Items counter: 3/4 </span>";
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
@@ -51,12 +51,15 @@ function items_counter(id) {
     }
 
     if((counter == 4) && (items_list[item] == 0)) {
-        document.getElementById("items_counter").innerHTML = "Items counter: 4/4";
+        document.getElementById("items_counter").innerHTML = "<span> Items counter: 4/4 </span>";
         items_list[item] = 1;
         alert(`You found the ${id}!!`);
         counter = counter+1;
         document.getElementById(id).style.display = "none";
-        window.location.replace("../html/last_page.html");
+        window.location.assign("../html/last_page.html");
+    }
+    if(id === 'wolf'){
+        document.getElementById('wolf_tail').style.display = "none";
     }
 
     console.log(items_list);

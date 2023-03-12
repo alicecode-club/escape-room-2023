@@ -8,6 +8,7 @@ let fairyTaleroomNumber = 1;
 localStorage.setItem("roomNumber",fairyTaleroomNumber);
 localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../../alicecode_questions/");
 // ~ End of js part 1/2 to add
+let code_entered = false
 function grandma(){
     alert("The First Number Is 2")
 }
@@ -21,8 +22,16 @@ function book(){
     alert("The Forth Number Is 6")
 }
 function door(){
-    let code=prompt("Enter Code:")
-    if (code=="2386"){
+    if(!code_entered){
+        let code=prompt("Enter Code:")
+        if (code=="2386"){
+            code_entered = true;
+        }
+        else{
+            alert("Sorry, Try Again...")
+        }
+    }
+    if(code_entered) {
         // ~ Start of js part 2/2 to add: Add THIS in the function that lead to the next page
         if(localStorage.getItem(`alice_question${fairyTaleroomNumber}_answered`) !== "true"){
             alert("You need to answer alice's question before you can leave!");
@@ -34,8 +43,5 @@ function door(){
             localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
         }
         // ~ End of js part 2/2 to add
-    }
-    else{
-        alert("Sorry, Try Again...")
     }
 }
