@@ -1,9 +1,8 @@
 body {
-    background: url(../media/candy_house.jpg) no-repeat center center fixed; 
-    background-size: cover;
+    background-image: url("../media/candy_house.jpg");
+    background-size: 100% 100%;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
+    background-repeat: no-repeat;
   }
 
 #oven {
@@ -11,24 +10,32 @@ body {
     top: 44%;
     height: 36%;
     width: 15%;
-    position: fixed;
+    position: absolute;
 
 }
 
 #hansel_in_cage {
-    left: 45%;
-    top: 35%;
-    height: 60%;
-    width: 25%;
-   position: fixed;
+    left: 49%;
+    top: 40%;
+    height: 55%;
+    width: 16%;
+   position: absolute;
 }
 
 #door {
-    bottom: 9%;
-    top: 9%;
-    padding-right: 17%;
-    left: 80%;
-    position: fixed;
+    right: 6%;
+    top: 20%;
+    height: 44%;
+    width: 14%;
+    position: absolute;
+}
+
+#more_door {
+    right: 15%;
+    top: 64%;
+    height: 12%;
+    width: 4%;
+    position: absolute;
 }
 
 .pop {
