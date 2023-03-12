@@ -61,7 +61,7 @@
 
 .coverImg {
   width: 18%;
-  height: 60%;
+  height: 50%;
     cursor: pointer;
 }
 .coverImg:hover {
@@ -71,7 +71,7 @@
 .imgCoverOnclick {
     opacity: 0.3;
     width: 18%;
-    height: 60%;
+    height: 50%;
     cursor: pointer;
 }
 
@@ -95,7 +95,6 @@
     font-size: 150px ;
     color:rgb(152, 230, 232);
     font-family: 'Solitreo', cursive;
-    margin-left:48%;
 }
 
 .backToMain {
@@ -133,7 +132,7 @@
 
 .coverImgLetter {
     width: 18%;
-    height: 60%;
+    height: 50%;
     cursor: pointer;
 }
 
