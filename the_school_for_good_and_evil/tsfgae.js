@@ -178,7 +178,7 @@ function checkDigits() {
     }
 
     // ~ Start of js part 1/2 to add. Change:
-        // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
+        // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your Xrelative location to /alicecode_questions/.
         // 2. fairyTaleroomNumber = correct room number (1-6):
         //   1: Little red riding hood, 2: Cinderella, 3: Hansel and Gretel, 4: The little mermaid
         //   5: Zehava and the three bears, 6: The school for good and evil
