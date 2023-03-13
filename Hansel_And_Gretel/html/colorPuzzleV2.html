@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../css/colorPuzzleV2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="../js/colorPuzzleV2.js"></script>
+    <link rel="icon" type="image/x-icon" href="../media/candy.png"> 
+    <title>Hansel And Gretel</title>
+</head>
+
+<body>
+    <button id="exit" onclick="goBack()">back</button>
+    <div id="content">        
+        <div id="expl">
+        <p> To unlock the door you have to solve the puzzle! <br> Put the correct code and click Submit</p>
+        </div>
+        <div id="left-side">
+            <div class="colorBoard">
+                <div class="color" id="blue" onclick="pickColor('blue')"></div>
+                <div class="color" id="red" onclick="pickColor('red')"></div>
+                <div class="color" id="orange" onclick="pickColor('orange')"></div>
+                <div class="color" id="green" onclick="pickColor('green')"></div>
+                <div class="color" id="yellow" onclick="pickColor('yellow')"></div>
+                <div class="color" id="pink" onclick="pickColor('pink')"></div>
+            </div> 
+            <div id="currentColor"></div> 
+        </div>
+        <div id="right-side">
+            <div id="fullBoard">
+                <div class="secretColor" id="secretColor1" onclick="paint('secretColor1')"></div>
+                <div class="secretColor" id="secretColor2" onclick="paint('secretColor2')"></div>
+                <div class="secretColor" id="secretColor3" onclick="paint('secretColor3')"></div>
+                <div class="secretColor" id="secretColor4" onclick="paint('secretColor4')"></div>
+            </div>
+            <div class="submit" onclick="checkCode()">Submit</div>
+        </div>
+    </div>
+   
+</body>

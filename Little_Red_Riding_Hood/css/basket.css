@@ -4,6 +4,8 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
 }
 
 
@@ -14,6 +16,7 @@ body{
     top: 4.9%;
     right: 39%;
     transform: rotate(16.5deg);
+    z-index: -1;
 }
 
 #wolf_tail {
@@ -23,6 +26,7 @@ body{
     top: 3.5%;
     right: 53%;
     transform: rotate(-24deg);
+    z-index: -1;
 }
 
 #grandmother {
@@ -32,19 +36,19 @@ body{
     top: 5.2%;
     left: 2.8%;
     transform: rotate(-36deg);
+    z-index: -1;
 }
-
 
 #explane_text {
-    position: fixed;
-    font-family: 'Nunito', sans-serif;
-    font-size: 215%;
-    text-align: center;
-    color: rgb(0, 0, 0);
     top: 30%;
-    left: 23%;
-    background-color: rgba(255, 255, 255, 0.724);
+    text-align: center;
+    margin-top: 20%;
 }
+#explane_text span{
+    background-color: rgba(255, 255, 255, 0.724);
+    padding: 0.4%;
+}
+
 
 
 #cape {
@@ -54,6 +58,7 @@ body{
     top: 43.5%;
     right: 10%;
     transform: rotate(38.3deg);
+    z-index: -1;
 }
 
 #book {
@@ -63,20 +68,21 @@ body{
     top: 51.6%;
     right: 45.3%;
     transform: rotate(-37deg);
+    z-index: -1;
 }
 
 
 #items_counter {
-    position: fixed;
-    padding: 0.4%;
-    width: 16%;
-    height: 4%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 119);
-    top: 89.5%;
-    right: 2.5%;
+    text-align: right;
+    position:absolute;
+    right: 5%;
+    bottom: 10%;
     display: inline-block;
-    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}
+   
+#items_counter span{
+    background-color: rgb(255, 255, 119);
+    padding: 0.4%;
 }

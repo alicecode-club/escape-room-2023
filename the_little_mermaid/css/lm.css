@@ -10,6 +10,7 @@ body{
 }
 h1{
   color: rgb(9, 19, 57);
+  background-color: rgba(132, 190, 252, 0.5);
 }
 h3,h1{
   color: rgb(9, 19, 57);
@@ -25,7 +26,8 @@ h3:hover {
   color: rgb(9, 19, 57);
 }
 .q2{
-  color:grey;
+  color:rgb(196, 196, 196);
+  background-color: rgba(38, 58, 80, 0.6);
 }
 #doorImg{
   height: 30%;

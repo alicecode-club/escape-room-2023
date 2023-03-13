@@ -1,3 +1,4 @@
 function OpenBasket(){
-    window.location.replace("../html/basket.html");
+  alert("Correct!");
+  window.location.assign("../html/basket.html");
   }

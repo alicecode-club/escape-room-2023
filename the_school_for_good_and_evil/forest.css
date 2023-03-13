@@ -100,6 +100,7 @@
     flex-direction: center;
     width: 95%;
     position: fixed;
+    background-color: rgba(0, 70, 33, 0.5);
 }
 
 .noteForest {

@@ -1,11 +1,3 @@
-.endText {
-    font-family: 'Tilt Warp', cursive;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-} 
 body{
     background-image: url("backgroundendpage.jpg");
     background-size: 100% 100%;
@@ -15,9 +7,9 @@ body{
     
 }
 .endText{
-  font-family: 'Tilt Neon', cursive;
+  font-family: 'DM Serif Display', serif;
   position: fixed;
-  font-size: 400%;
+  font-size: 300%;
   text-align: center;
   color: rgb(0, 0, 0);
   top: 0%;
