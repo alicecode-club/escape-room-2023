@@ -70,17 +70,43 @@ body {
     position: fixed;
  }
 
- #code_row {
-    display: flex;
-    justify-content: space-around;
-    height:15%;
-    position: fixed;
+ #num1 {
+   position: fixed;
+   left: 10%;
+   width: 15%;
+   height: 10%;
+   font-size: 30%;
+   top: 50%;
  }
 
- .num {
-    width: 10%;
-    font-size: 30%;
+ #num2 {
+   position: fixed;
+   left: 30%;
+   width: 15%;
+   height: 10%;
+   font-size: 30%;
+   top: 50%;
  }
+
+ #num3 {
+   position: fixed;
+   left: 50%;
+   width: 15%;
+   height: 10%;
+   font-size: 30%;
+   top: 50%;
+ }
+
+ #num4 {
+   position: fixed;
+   left: 70%;
+   width: 15%;
+   height: 10%;
+   font-size: 30%;
+   top: 50%;
+ }
+
+
   
  #submit {
     font-size: 40%;
@@ -92,6 +118,7 @@ body {
     background-color: white;
     position: fixed;
     bottom: 10%;
+    right: 40%
 
  }
  #submit:hover {
