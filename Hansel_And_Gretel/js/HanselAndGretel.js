@@ -1,6 +1,20 @@
 let degreesPuzzle=false;
 let cagePuzzle=false;
 
+(function($) {
+    $(document).ready(function() {
+        console.log("degrees: "+localStorage.getItem("degreesPuzzle"));
+        if(localStorage.getItem("degreesPuzzle")){
+            
+            var imgReplace = document.getElementsByClassName("myImg")[0];
+            imgReplace.src = "../media/oven_on.png";
+        }
+        if(localStorage.getItem("cagePuzzle")){
+            document.getElementById("hansel").style.visibility = "visible";
+        }
+    });
+})(jQuery);
+
 // ~ Start of js part 1/2 to add. Change:
 // 1. relativeLocationToAliceFolder${fairyTaleroomNumber} = your relative location to /alicecode_questions/.
 // 2. fairyTaleroomNumber = correct room number (1-6):
@@ -28,6 +42,8 @@ function exit() {
         else{
             // escape the room! = your code of moving to next page
             localStorage.removeItem("code_solved");
+            localStorage.removeItem("degreesPuzzle");
+            localStorage.removeItem("cagePuzzle");
             alert("you escaped!");
             window.location.assign("../../the_little_mermaid/one.littel.html");
 
@@ -44,7 +60,10 @@ function oven(){
         var imgReplace = document.getElementsByClassName("myImg")[0];
         imgReplace.src = "../media/oven_on.png";
         degreesPuzzle=true; 
+        localStorage.setItem("degreesPuzzle",true);
     }
+    
+    console.log("degrees: "+localStorage.getItem("degreesPuzzle"));
 }
 
 function cage() {
@@ -78,6 +97,7 @@ function submit() {
         popDown();
         cagePuzzle=true;
         document.getElementById("hansel").classList.add("hansel2");
+        localStorage.setItem("cagePuzzle",true);
         setTimeout(function(){
 			alert ("Hansel: Thank you! I remember now! the candies that were above the door were blue, blue, red, green.");
             
