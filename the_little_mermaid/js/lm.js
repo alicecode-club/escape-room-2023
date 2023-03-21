@@ -5,19 +5,19 @@ localStorage.setItem(`relativeLocationToAliceFolder${fairyTaleroomNumber}`, "../
 var q1answered= false;
 var q2answered= false;
 // ~ End of add this 
-q1_correct = false;
-q2_correct = false;
+let q1_correct = false;
+let q2_correct = false;
 function correct(q_number) {
   alert("Correct!");
-  if(q_number===1){
+  if(q_number==1){
     q1_correct = true;
     document.getElementById("correctAnswer1").className="correctAnswer";
-    document.getElementById("wrongAnswer1").className="wrongAnswer";
+    document.getElementsByClassName("wrongAnswer1").className="wrongAnswer";
   }
   else{
     q2_correct = true;
     document.getElementById("correctAnswer2").className="correctAnswer";
-    document.getElementById("wrongAnswer2").className="wrongAnswer";
+    document.getElementsByClassName("wrongAnswer2").className="wrongAnswer";
   }
   if(q1_correct && q2_correct){
 

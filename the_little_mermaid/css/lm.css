@@ -6,7 +6,6 @@ body{
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
 }
 h1{
   color: rgb(9, 19, 57);
@@ -30,7 +29,7 @@ h3:hover {
   background-color: rgba(38, 58, 80, 0.6);
 }
 #doorImg{
-  height: 30%;
+  height: 40%;
   width: 30%;
   left: 68%;
   top: 66%;
@@ -46,3 +45,9 @@ h3:hover {
   background-color: rgb(255, 68, 0);
   pointer-events: none;
 }
+
+.center{
+  text-align: center;
+  font-size: 25px;
+}
+
