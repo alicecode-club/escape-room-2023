@@ -22,7 +22,7 @@
 }
 
 .f3{
-    background: url('https://rare-gallery.com/thumbs/4591513-digital-art-drawing-painting-landscape-nature-forest-trees-deviantart-fantasy-art.jpg');
+    background: url('forestNoteBg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -84,12 +84,11 @@
 }
 
 #note {
-    width: 2.2%;
-    height: 2%;
-    left: 73%;
-    top: 87%;
+    width: 2.7%;
+    height: 3%;
+    left: 72.5%;
+    top: 86.8%;
     position: fixed;
-
 }
 
 
