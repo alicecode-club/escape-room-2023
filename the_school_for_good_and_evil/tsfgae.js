@@ -44,7 +44,7 @@ function checkLetterNum(coverNum) {
         case 4:
         case 1:
         case 5:
-            showLetterNum("Worng");
+            showLetterNum("Wrong");
             disableLetter();
             break;
         case 3:
