@@ -15,10 +15,7 @@ h3,h1{
   color: rgb(9, 19, 57);
   text-align: center;
 }
-#rotate{
-  transform: rotate(-1deg);
- 
-}
+
 h3:hover {
   cursor: pointer;
   background-color: rgb(255, 0, 187);
