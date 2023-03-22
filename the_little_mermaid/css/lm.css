@@ -26,10 +26,10 @@ h3:hover {
   background-color: rgba(38, 58, 80, 0.6);
 }
 #doorImg{
-  height: 40%;
+  height: 35%;
   width: 30%;
   left: 68%;
-  top: 66%;
+  top: 62%;
   position:absolute;
   border-radius: 90px;
   visibility: hidden;  
