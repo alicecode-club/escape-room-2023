@@ -1,0 +1,67 @@
+body {
+    background-image: url("a.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-family: 'Courgette', cursive;
+  }
+
+#container {
+   position: fixed;
+   background-color: #634494;
+   width: 50%;
+   border-radius: 15px;
+   padding-left: 5%;
+   padding-right: 2%;
+   left:38%;
+   top: 3%;
+}
+
+#title {
+    font-size:3.5vw;
+}
+
+#instructions {
+    font-size:1.8vw;
+}
+
+#list {
+    font-size:1.5vw;
+}
+
+#good_luck {
+    font-size:1.8vw;
+}
+
+.rainbow-button {
+    width:calc(15vw + 4.5px);
+    height:calc(6vw + 4.5px);
+    background-image: linear-gradient(90deg, #8e37ff 0%, #ffa0e2 49%, #ffffff 80%, #882dff 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:2.5vw;
+    font-weight:bold;
+    position: absolute;
+    left: 60%
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:15vw;
+    height:6vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:15vw;
+    }
+  }
