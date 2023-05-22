@@ -197,7 +197,11 @@ function checkDigits() {
         }
         else{
             // escape the room! = your code of moving to next page
-            window.location.href = '../end_page/end_page.html';
+            //end page 1
+            // window.location.href = '../end_page/end_page.html';
+
+            // end page 2 - leading to padlet - longer game
+            window.location.href = '../end_page_v2/end_page_v2.html';
 
             //just for testing
             localStorage.removeItem(`alice_question${fairyTaleroomNumber}_answered`);
